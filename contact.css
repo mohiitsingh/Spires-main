@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-icon{
+    color: orange;
+}
+
+.contact-button{
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+}
+
+.contact-button:hover{
+    background-color: transparent;
+    outline: 2px solid orange;
+}
+
+input, textarea{
+    border: 1px solid orange !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .fadeInUp{
+        /* width: 50%; */
+        overflow: hidden;
+        padding: 0;
+    }
+}

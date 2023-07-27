@@ -97,11 +97,12 @@ h4{
     width: 80.5%;
     border: none;
     outline: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: white;
     font-weight: 500;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .form div button:hover{

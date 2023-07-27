@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 body{
@@ -41,13 +40,4 @@ body{
     padding: 0;
 }
 
-.fadeIn{
-    background-color: red;
-}
 
-.container-xxl{
-    /* background-color: rebeccapurple; */
-    /* padding: 20rem; */
-    /* margin-top: 2rem; */
-    /* z-index: 1; */
-}
