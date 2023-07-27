@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.button{
+    background-color: orange;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.button:hover{
+    background-color: white;
+    outline: 1px solid orange;
+    color: black;
+}
+
+
+.about-bg {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 5px 5px;
+}
+
+
+.tick{
+    margin: 0;
+    padding: 0;
+}
+
+.fadeIn{
+    background-color: red;
+}
+
+.container-xxl{
+    /* background-color: rebeccapurple; */
+    /* padding: 20rem; */
+    /* margin-top: 2rem; */
+    /* z-index: 1; */
+}
