@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.jobDetail{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.jobDetail-1{
+    padding: 1rem;
+}
+
+.part1{
+    display: flex;
+    gap: 20px;
+}
+
+.primary{
+    color: green;
+    margin-right: 10px;
+}
+
+.location{
+    color: green !important;
+}
+
+.text-truncate{
+    margin-right: 2px;
+}
+
+.pt1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h4{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.list-unstyled{
+    font-size: 0.95rem;
+    margin: 1rem 0;
+}
+
+
+.fa{
+    color: orangered;
+    margin-right: 4px;
+    font-size: 1.1rem;
+}
+
+.form{
+    width: 100%;
+}
+
+.input-div{
+    width: 40%;
+    display: inline-block;
+}
+
+.form div input{
+    width: 100%;
+    margin: 0.3rem 0;
+    padding: 5px 20px;
+    font-size: 1rem;
+}
+
+.form div textarea{
+    width: 80.5%;
+    padding: 10px 20px;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.input-div input[type="file"]{
+    border: 0.01px solid grey;
+    padding: 4px 10px;
+}
+
+.form div button{
+    background-color: black;
+    width: 80.5%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.form div button:hover{
+    outline: 0.1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.jobDetail-2{
+    padding: 2rem;
+}
+
+.jobDetail-2 div{
+    padding: 2rem;
+    background-color: rgb(247, 218, 193);
+    margin: 2rem 1rem;
+}
+
+.me-2{
+    margin: 5px 3px;
+    font-size: 1.1rem;
+    padding-right: 2px;
+    color: green;
+}
+
+@media screen and (max-width: 1024px) {
+    .form{
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .form div input{
+        font-size: 0.9rem;
+        padding: 5px 0;
+        margin: 0.4rem 0;
+    }
+
+    .form div input[type="file"]{
+        font-size: 0.9rem;
+        padding: 4px 3px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .jobDetail{
+        grid-template-columns: 100%;
+    }
+
+    .form{
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        padding: 1rem;
+    }
+
+    .input-div{
+        width: 100%;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .form div input{
+        padding: 5px 20px;
+    }
+
+    .form div textarea{
+        width: 100%;
+        margin: 0;
+    }
+
+    .form div button{
+        width: 100%;
+        margin-top: 0.4rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .jobDetail-2{
+        padding: 0rem;
+    }
+
+    .jobDetail-2 div{
+        padding: 2rem 0.5rem;
+        background-color: rgb(247, 218, 193);
+        margin: 2rem 1rem;
+    }
+
+    .form{
+        /* background-color: red; */
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form{
+        /* background-color: rebeccapurple; */
+        /* background-color: whitesmoke; */
+        padding: 0.1rem 0;
+    }
+}

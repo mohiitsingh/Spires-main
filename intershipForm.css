@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /* background-color: rgb(34, 97, 152); */
+    background-color: rgba(237, 212, 165, 0.778);
+}
+
+.form-div{
+    width: 50%;
+    background-color: whitesmoke;
+    /* margin: 0 auto; */
+    transform: translate(50%,10%);
+    padding: 1rem;
+    margin-bottom: 9rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.form-div h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.form-div form{
+    /* background-color: red; */
+    padding: 1rem;
+}
+
+form div{
+    margin-bottom: 1rem;
+}
+
+form div .label{
+    font-size: 0.8rem;
+}
+
+form div input{
+    padding: 5px 10px ;
+}
+
+form div select{
+    padding: 5px 10px;
+}
+
+.btn button{
+    width: 95%;
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: white;
+    border: 0.1px solid black;
+    color: black;
+}
+
+.input{
+    width: 60%;
+}
+
+.name{
+    margin-right: 10rem;
+}
+
+.birth{
+    margin-right: 8.5rem;
+}
+
+.phone{
+    margin-right: 6.8rem;
+}
+
+.email{
+    margin-right: 10rem;
+}
+
+.twitter{
+    margin-right: 6.8rem;
+}
+
+.instagram{
+    margin-right: 5.8rem
+}
+
+.facebook{
+    margin-right: 7rem;
+}
+
+.city{
+    margin-right: 9rem;
+}
+
+
+.referred{
+    margin-right: 2rem;
+}
+
+.resume{
+    margin-right: 6rem;
+}
+
+.photo{
+    margin-right: 7rem;
+}
+
+.position{
+    margin-right: 9rem;
+}
+
+.college{
+    margin-right: 9.5rem;
+}
+
+.graduation{
+    margin-right: 6.5rem;
+}
+
+.why-intern{
+    display: flex;
+    gap: 14px;
+}
+
+.why-intern div textarea{
+    width: 230%;
+}
+
+@media screen and (max-width: 1024px) {
+    .form-div{
+        width: 80%;
+        transform: translate(15%,10%);
+        /* padding: 2rem; */
+    }
+
+    .form-div form{
+        padding: 2rem;
+    }
+
+    form div input{
+        padding: 5px 10px ;
+    }
+
+    #first-name{
+        width: 29%;
+    }
+
+    #last-name{
+        width: 30%;
+    }
+
+    .city{
+        margin-right: 9.1rem;
+    }
+
+    #city{
+        width: 29.5%;
+    }
+
+    #state{
+        width: 30%;
+    }
+
+    .why-intern div textarea{
+        width: 265%;
+    }
+
+}
+
+@media screen and (max-width: 834px) {
+    .why-intern div textarea{
+        width: 215%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-intern div textarea{
+        width: 195%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    form div input{
+        /* background-color: rebeccapurple; */
+        margin-top: 0.4rem;
+    }
+    
+    .name{
+        margin-right: 20rem;
+    }
+
+    #first-name{
+        width: 50%;
+    }
+
+    #last-name{
+        width: 45%;
+    }
+
+    .birth{
+        margin-right: 15rem;
+    }
+
+    .input{
+        width: 95%;
+    }
+
+    .city{
+        margin-right: 15rem;
+    }
+
+    #city{
+        width: 50%;
+    }
+
+    #state{
+        width: 45%;
+    }
+
+    .referred{
+        padding-right: 10rem;
+    }
+
+    .position{
+        padding-right: 10rem;
+    }
+
+    .why-intern{
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .why-intern div textarea{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 1.6rem;
+        padding-bottom: 0;
+    }
+
+    .form-div{
+        transform: translate(10%,8%);
+    }
+
+    .form-div form{
+        padding: 0.5rem 0;
+    }
+
+    .birth{
+        margin-right: 10rem;
+    }
+
+    .referred{
+        padding-right: 5rem;
+    }
+
+    .position-div .second-position{
+        margin-left: 7rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .referred{
+        padding-right: 2rem;
+    }
+
+    form div select{
+        padding: 5px 1px;
+        width: 30%;
+    }
+
+    .facebook2{
+        margin-left: 5rem;
+    }
+
+    .position-div .second-position{
+        margin-left: 5rem;
+    }
+
+}

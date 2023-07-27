@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Reset some default styles for better consistency */
+body,
+div,
+h2,
+input,
+label,
+select {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.find-job {
+  display: flex;
+  gap: 30px;
+  padding-left: 50px;
+  /* background-color: brown; */
+}
+
+/* filter_cardd styles */
+/* CSS for the .filter_cardd section */
+/* Style the filter button */
+.filter_button {
+  display: none;
+  /* Hide the filter button by default */
+}
+
+.filter_button button {
+  display: block;
+  background-color: #ff9500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.filter_button button:hover {
+  background-color: #d57c00;
+}
+
+/* Media query for mobile view */
+
+.filter_cardd {
+  background-color: #f2f2f2;
+  width: 24%;
+  padding: 20px;
+  height: max-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: sticky;
+  top: 90px;
+  /* Adjust the top value as needed to set the distance from the top of the viewport */
+  z-index: 999;
+}
+
+.cardd-description {
+  color: black;
+}
+
+.filter_cardd h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Search bar styles */
+.search-container {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 8px 30px 8px 8px;
+  /* Adjust padding for icon placement */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Font Awesome search icon styles */
+.search-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+/* Money slider styles */
+.slider-container {
+  margin-bottom: 10px;
+}
+
+.slider-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.slider-container input[type="range"] {
+  width: 100%;
+}
+
+/* Job type styles */
+.job-type-container {
+  margin-bottom: 18px;
+}
+
+.job-type-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.job-type-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Job category styles */
+.job-category-container {
+  margin-bottom: 18px;
+}
+
+.job-category-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.category-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Location styles */
+.location-container {
+  margin-bottom: 10px;
+}
+
+.location-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.location-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.location-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .find-job {
+    padding-left: 30px;
+    gap: 20px;
+  }
+
+  .filter_cardd{
+    width: 25% ;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .filter_cardd{
+    width: 40% ;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  
+
+  /* Full space for the filter menu in mobile view */
+  .filter_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Move the cards below the filter menu in mobile view */
+  /* .cardd-container {
+    display: block;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .filter_cardd {
+    width: 40%;
+    /* background-color: red; */
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .filter_cardd{
+  display: none;
+ }
+}

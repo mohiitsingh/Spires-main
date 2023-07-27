@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+/* CSS for the card container */
+.cardd-container {
+    padding: 20px;
+    width: 74%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 6rem;
+  }
+  
+  /* CSS for the card */
+  .cardd {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: calc(50% - 20px);
+    /* Adjust the width based on the number of cards per row (2 cards per row in this case) */
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .btn-jobs {
+    text-align: center;
+  
+    margin: 0 auto;
+  
+    margin-bottom: 60px;
+  }
+  
+  .btn-jobs button {
+    border: none;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 12px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+  }
+  
+  
+  .btn-jobs button:hover {
+    background-color: #d57c00;
+  }
+  
+  
+  
+  
+  .btn-green {
+    border: none;
+    padding: 10px 20px;
+    color: rgb(0, 38, 0);
+    background-color: #ff9500;
+    font-size: 10px;
+  }
+  
+  
+  
+  
+  .cardd:hover {
+    /* border: 2px solid    #004602a0;; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.55);
+  }
+  
+  .text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .cardd-title {
+    padding-left: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .cardd-description {
+  
+    color: #ff0000;
+  }
+  
+  
+  .span_bgwale span {
+    width: 10px;
+    font-size: 10px;
+    background-color: rgba(160, 223, 255, 0.61);
+    background-color: black;
+    color: white !important;
+    padding: 6px 15px;
+    border-radius: 50px;
+    /* margin-right: 10px; */
+  
+  }
+  
+  
+  
+  
+  #Private {
+    /* background-color: rgba(255, 233, 192, 0.747); */
+    /* color: orange; */
+    background-color: orangered;
+  }
+  
+  #Urgent {
+    background-color: #00b712;
+  }
+  
+  
+  #FullTime {
+    color: blue;
+  }
+  
+  .span_currency{
+    margin-bottom: 1rem;
+  }
+  
+  .span_currency span {
+    /* background-color: chartreuse; */
+    /* margin-right: 15px; */
+    font-size: 14px;
+    word-spacing: 1px;
+    margin-left: 2px;
+    color: black;
+  
+    /* justify-content: space-between;   */
+  
+  }
+  
+  
+  .span_currency i {
+    font-size: 14px;
+    margin-right: 2px;
+    padding-left: 2px;
+    /* color: rgb(0, 47, 0); */
+    color: #000000;
+  }
+  
+
+  @media screen and (max-width: 834px) {
+    .cardd-container{
+      width: 50%;
+      flex-direction: column;
+    }
+
+    .cardd{
+      width: 90%;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardd-container{
+        width: 55%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .cardd-container{
+      width: 60%;
+    }
+
+    .cardd{
+      width: 100%;
+    }
+
+    .cardd-title{
+      font-size: 1.1rem;
+    }
+
+  }
+
+  @media screen and (max-width: 425px) {
+    .cardd-container{
+      width: 100%;
+    }
+  }

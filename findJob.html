@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spires | Job Search</title>
+	<link rel="stylesheet" href="findJob2.css">
+	<link rel="stylesheet" href="findJob.css">
+	<link rel="stylesheet" href="nav.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+	<section class="top-nav">
+
+
+		<div class="logo-div">
+
+			<div>
+				<a class="logo" id="logo-spires" onclick="window.location.href='./index.html'"><img
+						src="./assets/logo (1).png" alt=""></a>
+			</div>
+			<!-- <a class="logo" href="#">JobTree</a> -->
+
+			<input id="menu-toggle" type="checkbox" />
+			<label class='menu-button-container' for="menu-toggle">
+				<div class='menu-button'></div>
+			</label>
+
+			<ul class="menu">
+				<li><a onclick="window.location.href=''">Find Internships </a></li>
+				<li> <a onclick="window.location.href='./index.html'">Find Jobs </a></li>
+				<li> <a href="#">Employers </a></li>
+				<li><a href="#">Candidates </a></li>
+			</ul>
+
+
+		</div>
+
+	</section>
+		
+	<div class="find-job">
+		<div class="filter_button">
+			<button id="showFilters">Show Filters</button>
+		</div>
+		<div class="filter_cardd">
+
+			<h2>Job Search</h2> 
+			<div class="search-container">
+				<input type="text" placeholder="Search for jobs...">
+				<i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+			</div>
+			<div class="slider-container">
+				<label for="money-slider">Salary:</label>
+				<input type="range" id="money-slider" min="0" max="1000" value="500">
+				<span id="money-value">$500</span>
+			</div>
+			<div class="job-type-container">
+				<label><i class="fas fa-suitcase"></i> Job Type:</label> <!-- Suitcase icon -->
+				<select id="job-type">
+					<option value="full-time">Full Time</option>
+					<option value="part-time">Part Time</option>
+				</select>
+			</div>
+			<div class="job-category-container">
+				<label><i class="fas fa-suitcase"></i> Job Category:</label> <!-- Suitcase icon -->
+				<div class="category-item">
+					<input type="checkbox" id="engineering" name="category" value="engineering">
+					<label for="engineering">Engineering</label>
+				</div>
+				<div class="category-item">
+					<input type="checkbox" id="marketing" name="category" value="marketing">
+					<label for="marketing">Marketing</label>
+				</div>
+				<div class="category-item">
+					<input type="checkbox" id="sales" name="category" value="sales">
+					<label for="sales">Sales</label>
+				</div>
+				<div class="category-item">
+					<input type="checkbox" id="sales" name="category" value="sales">
+					<label for="sales">others</label>
+				</div>
+
+				<!-- Add more categories as needed -->
+			</div>
+
+			<div class="location-container">
+				<label><i class="fas fa-map-marker-alt"></i> Location:</label> <!-- Suitcase icon -->
+				<div class="location-item">
+					<input type="checkbox" id="pune" name="location" value="pune">
+					<label for="pune">Pune</label>
+				</div>
+				<div class="location-item">
+					<input type="checkbox" id="bangalore" name="location" value="bangalore">
+					<label for="bangalore">Bangalore</label>
+				</div>
+				<div class="location-item">
+					<input type="checkbox" id="mumbai" name="location" value="mumbai">
+					<label for="mumbai">Mumbai</label>
+				</div>
+				<div class="location-item">
+					<input type="checkbox" id="others" name="location" value="others">
+					<label for="others">Others</label>
+				</div>
+			</div>
+
+		</div>
+		<div class="cardd-container">
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/com-logo-2.jpg" height="35px" width="35px" alt="">
+					<div>
+						<pre style="width: 100%;" class="cardd-title"> Marketing Manager</pre>
+					</div>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>New York,USA </span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>$123-$456</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span id="FullTime">FullTime</span> <span
+								id="Private">Private</span> <span id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span>FullTime</span> <span id="Private">Private</span> <span
+								id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span>FullTime</span> <span id="Private">Private</span> <span
+								id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span>FullTime</span> <span id="Private">Private</span> <span
+								id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span>FullTime</span> <span id="Private">Private</span> <span
+								id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+			<div class="cardd" onclick="window.location.href='./jobDetail.html'">
+
+				<div class="text">
+					<img src="./assets/soft_eng.png" height="35px" width="35px" alt="">
+					<pre style="width: 100%;" class="cardd-title">Software Engineer (Android)   </pre>
+					<!-- <p><i id="bookmarkid" class="far fa-bookmark"></i></p> -->
+				</div>
+
+				<div>
+
+					<div class="span_currency">
+						<p class="cardd-description"><i class="fa fa-suitcase"></i><span>Segement</span> <i
+								class="fa fa-map-marker-alt" aria-hidden="true"></i><span>London, Uk</span> <i
+								class="fa fa-solid fa-money-bill-wave"></i><span>10-20$</span> </p>
+					</div>
+
+					<div class="span_bgwale">
+						<p class="cardd-description"><span>FullTime</span> <span id="Private">Private</span> <span
+								id="Urgent">Urgent</span></p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="btn-jobs">
+				<button class="btn-green">Load More Listing</button>
+			</div>
+
+		</div>
+	</div>
+
+	
+	
+	<script>
+		document.getElementById("showFilters").addEventListener("click", function () {
+			var filterCard = document.querySelector(".filter_cardd");
+			if (filterCard.style.display === "none" || filterCard.style.display === "") {
+				filterCard.style.display = "block";
+			} else {
+				filterCard.style.display = "none";
+			}
+		});
+	</script>
+</body>
+
+</html>
