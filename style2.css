@@ -37,13 +37,19 @@
 } */
 
 @media screen and (max-width: 834px) {
-    .banner{
-        height: 18vh;
+    .banner {
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        height: 20vh;
     }
 }
 
 @media screen and (max-width: 426px) {
-    .banner{
-        height: 27vh;
+    .banner {
+        height: 33vh;
     }
 }

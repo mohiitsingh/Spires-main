@@ -1,7 +1,9 @@
 @media (max-width: 1025px) {
 
     .outer-section{
-      height: 70vh;
+      height: 50vh;
+      /* background-color: red; */
+      margin-bottom: 2rem;
     }
   
     .inner-section-div h2 {
@@ -51,6 +53,11 @@
   
     .carddd img {
       height: 225px;
+    }
+
+    .apply{
+      margin-left: 0;
+      display: none;
     }
   
   
