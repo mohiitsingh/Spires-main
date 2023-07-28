@@ -125,6 +125,10 @@ ul.menu {
   transform: rotate(-405deg);
 }
 
+.logo-div2{
+  padding-top: 20px;
+}
+
 .logo-div2 ul {
   display: flex;
   justify-content: space-between;
