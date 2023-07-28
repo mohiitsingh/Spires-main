@@ -35,6 +35,22 @@
     margin-bottom: 2rem;
 }
 
+.container-xxl{
+    background-color: whitesmoke;
+}
+
+.cat-item {
+    display: block;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .09);
+    border: 2px solid transparent;
+    transition: .5s ease-in-out;
+}
+
+.cat-item:hover {
+    border-color: rgba(0, 0, 0, .08);
+    box-shadow: none;
+}
+
 
 /* .login-btn{
     padding: 10px 25px;
