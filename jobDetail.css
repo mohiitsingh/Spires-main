@@ -7,7 +7,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.jobDetail{
+p{
+    margin: 0 !important;
+}
+
+/* .jobDetail{
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -22,18 +26,38 @@
 .part1{
     display: flex;
     gap: 20px;
-}
+} */
 
 .primary{
-    color: green;
-    margin-right: 10px;
+    color: orange !important;
 }
 
 .location{
     color: green !important;
 }
 
-.text-truncate{
+.fa{
+    color: orangered !important;
+    margin-right: 4px;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.button{
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+}
+
+.button:hover{
+    background-color: transparent;
+    outline: 1px solid orange;
+}
+h4{
+    margin-top: 0.5rem;
+}
+
+/* .text-truncate{
     margin-right: 2px;
 }
 
@@ -54,11 +78,7 @@ h4{
 }
 
 
-.fa{
-    color: orangered;
-    margin-right: 4px;
-    font-size: 1.1rem;
-}
+
 
 .text-primary{
     margin-bottom: 10px;
@@ -144,16 +164,15 @@ h4{
         font-size: 0.9rem;
         padding: 4px 3px;
     }
-}
+} */
 
-@media screen and (max-width: 834px) {
+/* @media screen and (max-width: 834px) {
     .jobDetail{
         grid-template-columns: 100%;
     }
 
     .form{
         width: 100%;
-        /* background-color: rebeccapurple; */
         padding: 1rem;
     }
 
@@ -191,7 +210,6 @@ h4{
     }
 
     .form{
-        /* background-color: red; */
         padding: 0;
         margin: 0;
     }
@@ -199,8 +217,6 @@ h4{
 
 @media screen and (max-width: 375px) {
     .form{
-        /* background-color: rebeccapurple; */
-        /* background-color: whitesmoke; */
         padding: 0.1rem 0;
     }
-}
+} */
