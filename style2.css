@@ -35,9 +35,6 @@
     margin-bottom: 2rem;
 }
 
-.container-xxl{
-    background-color: whitesmoke;
-}
 
 .cat-item {
     display: block;
@@ -49,6 +46,35 @@
 .cat-item:hover {
     border-color: rgba(0, 0, 0, .08);
     box-shadow: none;
+}
+
+.nav-pills .nav-item .active {
+    border-bottom: 2px solid orange;
+}
+
+.job-item {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.job-item:hover {
+    border-color: rgba(0, 0, 0, .08);
+    box-shadow: none;
+}
+
+.far, .fa{
+    color: orange !important;
+}
+
+.btn-primary{
+    background-color: orange;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: black;
 }
 
 

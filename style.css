@@ -14,6 +14,7 @@
 
 p{
   word-spacing: 0 !important;
+  margin: 0;
 }
 
 .outer-section {
@@ -436,6 +437,9 @@ p{
     cursor: pointer;
   }
   
+  .heading-footer{
+    font-size: 1.5rem ;
+  }
   
   
   .footer-section {
