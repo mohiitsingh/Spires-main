@@ -32,15 +32,17 @@ p{
     color: orange !important;
 }
 
-.location{
-    color: green !important;
-}
+
 
 .fa{
     color: orangered !important;
     margin-right: 4px;
     margin-top: 4px;
     font-size: 1.1rem;
+}
+
+.location{
+    color: orange !important;
 }
 
 .button{
