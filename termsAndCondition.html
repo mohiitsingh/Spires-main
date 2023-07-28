@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms and Conditions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
 
     <style>
         /* Reset some default styles */
@@ -16,33 +17,33 @@ body, h1, p {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 22px; 
+  /* line-height: 22px;  */
 }
 
 header {
     text-align: center;
-      background-color: rgba(255, 166, 0, 0.769);
-      color: #fff;
-      padding: 25px; 
+      /* background-color: rgba(255, 166, 0, 0.487); */
+      padding: 25px 0 0 0; 
 }
 
 header h1 {
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+    /* font-size: 40px; */
+    /* color: rgb(255, 255, 255); */
     /* font-weight: 700; */
+    font-weight: 500;
 }
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 4rem 5rem;
 }
 
 
 main h2{
-    font-style: bold;
     font-size: 20px;
     margin-bottom: 6px;
-/* color: blue; */
-
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 
@@ -71,7 +72,33 @@ main h2{
     </style>
 </head>
 <body>
+    <section class="top-nav">
 
+
+		<div class="logo-div">
+
+			<div>
+				<a class="logo" id="logo-spires" onclick="window.location.href='./index.html'"><img
+						src="./assets/logo (1).png" alt=""></a>
+			</div>
+			<!-- <a class="logo" href="#">JobTree</a> -->
+
+			<input id="menu-toggle" type="checkbox" />
+			<label class='menu-button-container' for="menu-toggle">
+				<div class='menu-button'></div>
+			</label>
+
+			<ul class="menu">
+				<li><a href="./findInternship.html">Find Internships </a></li>
+				<li> <a href="./findJob.html">Find Jobs </a></li>
+				<li> <a href="./employer.html">Employers </a></li>
+				<li><a href="#">Candidates </a></li>
+			</ul>
+
+
+		</div>
+
+	</section>
 
 
       <header>
@@ -121,6 +148,80 @@ main h2{
         <h2>Contact Us</h2>
         <p>If you have any questions or concerns regarding these terms and conditions, please contact us at contact@dummycompany.com.</p>
     </main>
+
+    <div class="section5">
+
+      <footer>
+        <div class="footer-section">
+  
+          <div class="img-footer">
+            <img src="./assets/logo.png" height="auto" width="200px" alt="">
+          </div>
+  
+          <div class="para-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
+              voluptatum animi porro inventore expedita?</p>
+          </div>
+  
+  
+        </div>
+        <div class="footer-section1">
+          <h3 class="heading-footer" id="footer-nav">Navigation</h3>
+          <ul>
+            <li> Home</li>
+            <li> Jobs</li>
+            <li> Candidates</li>
+            <li> Partners</li>
+  
+          </ul>
+        </div>
+        <div class="footer-section2">
+          <h3 class="heading-footer">Policies</h3>
+          <ul>
+            <li onclick="window.location.href='./about.html'">About Us</li>
+            <li onclick="window.location.href='./contact.html'"> Contact Us</li>
+            <li onclick="window.location.href='./termsAndCondition.html'"> Terms & Conditions</li>
+            <li onclick="window.location.href='./privacyPolicy.html'"> Privacy Policy</li>
+  
+          </ul>
+        </div>
+        <div class="footer-section3">
+          <h3 class="heading-footer">Follow Us</h3>
+          <ul>
+            <li> Blog</li>
+            <li> Twitter</li>
+            <li> Facebook</li>
+            <li> Youtube</li>
+  
+          </ul>
+        </div>
+        <div class="footer-section4">
+          <h3 class="heading-footer">Popular Jobs</h3>
+          <ul>
+            <li> Web Developer</li>
+            <li> Web Designer</li>
+            <li> Ux Developer</li>
+            <li> Account Manager</li>
+  
+          </ul>
+        </div>
+      </footer>
+  
+      <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
+          href="">ActConnect</a></p>
+  
+  
+  
+  
+      <!-- ------------------------- -->
+  
+  
+  
+  
+  
+  
+  
+    </div>
   
 
 </body>

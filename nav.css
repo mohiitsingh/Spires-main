@@ -36,6 +36,7 @@ a {
 .logo-div {
   display: flex;
   margin-left: 1.5rem;
+  cursor: pointer;
 }
 
 .logo {
@@ -127,6 +128,7 @@ ul.menu {
 
 .logo-div2{
   padding-top: 20px;
+  /* background-color: rgb(25, 20, 30); */
 }
 
 .logo-div2 ul {
@@ -137,7 +139,7 @@ ul.menu {
 }
 
 .login-btn{
-  padding: 10px 25px;
+  padding: 5px 15px;
   border: none;
   border-radius: 5px;
   font-weight: bold;

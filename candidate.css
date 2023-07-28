@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.outer-container {
+    padding: 20px;
+}
+
+.inner-container1{
+    padding: 20px;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter input {
+    flex: 1;
+}
+
+input{
+    padding: 8px 10px;
+    margin-right: 1rem;
+    border: 0.1px solid orange;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+
+button{
+    padding: 8px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.know-more-button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 834px) {
+    input{
+        margin-top: 1rem;
+    }
+}

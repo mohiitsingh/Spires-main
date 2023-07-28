@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="candidate.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Student Profiles</title>
+</head>
+<body>
+    <section class="top-nav">
+
+
+		<div class="logo-div">
+
+			<div>
+				<a class="logo" id="logo-spires" onclick="window.location.href='./index.html'"><img
+						src="./assets/logo (1).png" alt=""></a>
+			</div>
+			<!-- <a class="logo" href="#">JobTree</a> -->
+
+			<input id="menu-toggle" type="checkbox" />
+			<label class='menu-button-container' for="menu-toggle">
+				<div class='menu-button'></div>
+			</label>
+
+			<ul class="menu">
+				<li><a href="./findInternship.html">Find Internships </a></li>
+				<li> <a href="./findJob.html">Find Jobs </a></li>
+				<li> <a href="#">Employers </a></li>
+				<li><a href="#">Candidates </a></li>
+			</ul>
+
+
+		</div>
+
+	</section>
+
+  <div class="outer-container">
+    <div class="inner-container1">
+      <h2>Filter The Students :</h2>
+      <input type="text" id="jobProfile" placeholder="Job Profile">
+      <input type="text" id="experience" placeholder="Experience">
+      <input type="text" id="salary" placeholder="Salary">
+      <input type="text" id="location" placeholder="Location">
+      <button onclick="filterStudents()">Apply Filters</button>
+    </div>
+    <div class="inner-container2" id="profile-cards">
+      <!-- Student profile cards will be dynamically added here -->
+    </div>
+  </div>
+
+  <div class="section5">
+
+    <footer>
+      <div class="footer-section">
+
+        <div class="img-footer">
+          <img src="./assets/logo.png" height="auto" width="200px" alt="">
+        </div>
+
+        <div class="para-footer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
+            voluptatum animi porro inventore expedita?</p>
+        </div>
+
+
+      </div>
+      <div class="footer-section1">
+        <h3 class="heading-footer" id="footer-nav">Navigation</h3>
+        <ul>
+          <li> Home</li>
+          <li> Jobs</li>
+          <li> Candidates</li>
+          <li> Partners</li>
+
+        </ul>
+      </div>
+      <div class="footer-section2">
+        <h3 class="heading-footer">Policies</h3>
+        <ul>
+          <li onclick="window.location.href='./about.html'">About Us</li>
+          <li onclick="window.location.href='./contact.html'"> Contact Us</li>
+          <li onclick="window.location.href='./termsAndCondition.html'"> Terms & Conditions</li>
+          <li onclick="window.location.href='./privacyPolicy.html'"> Privacy Policy</li>
+
+        </ul>
+      </div>
+      <div class="footer-section3">
+        <h3 class="heading-footer">Follow Us</h3>
+        <ul>
+          <li> Blog</li>
+          <li> Twitter</li>
+          <li> Facebook</li>
+          <li> Youtube</li>
+
+        </ul>
+      </div>
+      <div class="footer-section4">
+        <h3 class="heading-footer">Popular Jobs</h3>
+        <ul>
+          <li> Web Developer</li>
+          <li> Web Designer</li>
+          <li> Ux Developer</li>
+          <li> Account Manager</li>
+
+        </ul>
+      </div>
+    </footer>
+
+    <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
+        href="">ActConnect</a></p>
+
+
+
+
+    <!-- ------------------------- -->
+
+
+
+
+
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
