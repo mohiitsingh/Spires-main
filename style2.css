@@ -91,6 +91,12 @@
     color: white;
     background-color: orange;
 } */
+@media screen and (max-width: 992px) {
+    .banner{
+        height: 8vh;
+    }
+}
+
 
 @media screen and (max-width: 834px) {
     .banner {
