@@ -80,6 +80,7 @@
       flex-direction: column;
       /* background-color: brown; */
       height: 60vh;
+      background-color: yellow;
     }
   
     .inner-section {
