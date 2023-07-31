@@ -15,7 +15,7 @@ const students = [
     experience: "3 years",
     salary: "$70,000",
     location: "New York, USA",
-    image: "./img/photo.jpeg",
+    image: "../img/photo.jpeg",
   },
   {
     name: "Loki ",
@@ -23,7 +23,7 @@ const students = [
     experience: "5 years",
     salary: "$50,000",
     location: "India",
-    image: "./img/photo.jpeg",
+    image: "../img/photo.jpeg",
   },
   {
     name: "John Doe",
@@ -31,7 +31,7 @@ const students = [
     experience: "3 years",
     salary: "$70,000",
     location: "New York, USA",
-    image: "./img/photo.jpeg",
+    image: "../img/photo.jpeg",
   },
   {
     name: "Loki ",
@@ -39,7 +39,7 @@ const students = [
     experience: "5 years",
     salary: "$50,000",
     location: "India",
-    image: "./img/photo.jpeg",
+    image: "../img/photo.jpeg",
   },
   {
     name: "John Doe",
@@ -47,7 +47,7 @@ const students = [
     experience: "3 years",
     salary: "$70,000",
     location: "New York, USA",
-    image: "./img/photo.jpeg",
+    image: "../img/photo.jpeg",
   },
   {
     name: "Loki ",
@@ -55,7 +55,7 @@ const students = [
     experience: "5 years",
     salary: "$50,000",
     location: "India",
-    image: "./img/photo.jpeg",
+    image: "../img/photo.jpeg",
   },
   // Add more student profiles here
 ];
@@ -77,7 +77,7 @@ function displayStudents(filteredData) {
       <p>Experience: ${student.experience}</p>
       <p>Salary: ${student.salary}</p>
       <p>Location: ${student.location}</p>
-      <button class="know-more-button" onclick=window.location.href="./studentProfile.html">Know More</button>
+      <button class="know-more-button" onclick=window.location.href="../html/studentProfile.html">Know More</button>
     `;
     profileCards.appendChild(card);
   });
