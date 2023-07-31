@@ -1,163 +1,152 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    /* background-color: brown; */
 }
 
-.outer-section{
-    /* margin-top: -8rem; */
-    width: 100%;
-    /* background-color: rebeccapurple; */
-    /* padding: 2rem 0; */
-    /* margin-bottom: 2rem; */
-}
+
 
 
 /* Basic styling to create the layout */
-    .outer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 80%;
-        /* max-width: 1200px;  */
-        margin: 0 auto;
-        padding: 2rem 0;
-    }
+.outer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 60px; */
+    width: 100%;
+    max-width: 1200px;
+    /* Adjust this value as needed */
+    margin: 0 auto;
+    background-color: red;
+}
 
-    .inner-section1 {
-        width: 30%;
-        padding: 20px;
-        padding-bottom: 0;
-     /* border-left:  10px solid black; */
-        box-sizing: border-box;
-    }
+.inner-section1 {
+    width: 30%;
+    padding: 20px;
+    padding-bottom: 0;
+}
 
-    .inner-section2 {
-        width: 70%;
-        /* padding: 20px; */
-        box-sizing: border-box;
-    }
+.inner-section2 {
+    width: 70% !important;
+}
 
-    .profile-picture {
-        width: 150px;
-        height: 150px;
+.profile-picture {
+    width: 150px;
+    height: 150px;
 
-        /* background-color: #ccc;  */
-        /* background-image: url("./close-up-portrait-cheerful-glamour-girl-with-cute-make-up-smiling-white-teeth-looking-happy-camera-standing-blue-background_1258-70300.avif"); */
-        /* object-fit: cover; */
-        /* background-position: center; */
-   
-        /* Placeholder color for the profile picture */
-        margin: 0 auto;
-    }
+    /* background-color: #ccc;  */
+    /* background-image: url("./close-up-portrait-cheerful-glamour-girl-with-cute-make-up-smiling-white-teeth-looking-happy-camera-standing-blue-background_1258-70300.avif"); */
+    /* object-fit: cover; */
+    /* background-position: center; */
+
+    /* Placeholder color for the profile picture */
+    margin: 0 auto;
+}
 
 
 
-    .img-div img{
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      
-    }
+.img-div img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 
-    .profile-heading {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 20px;
-    }
+}
 
-    .job-title {
-        text-align: center;
-        font-weight: bold;
-        margin-top: 10px;
-    }
+.profile-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
 
-    .profile-para {
-        margin-top: 20px;
-        text-align: justify;
-    }
+.job-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
-    .skills {
-        margin-top: 20px;
-        text-align: justify;
-    }
+.profile-para {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.skills {
+    margin-top: 20px;
+    text-align: justify;
+}
 
 
-    .outer-container{
-        margin-top: 150px;
-        margin-bottom: 150px;
-        /* background-color: green; */
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
-    }
+.outer-container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    /* background-color: green; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
-    .inner-section1{
-        background-color: rgb(255, 255, 255);
-    }
+.inner-section1 {
+    background-color: rgb(255, 255, 255);
+}
 
-    .skills span {
-        background-color: rgb(197, 243, 255);    
-        padding: 5px  20px;
-        border-radius: 20px;
-        font-size: 12px;
-        /* margin: 10px; */
-        margin-right: 3px;
-        margin-bottom: 3px;
-        
-
-        
-    }
-
- 
-
-    .span-div{
-        text-align: center;
-    }
-
-    .inner-section2{
-        background-color: blue;
-    }
+.skills span {
+    background-color: rgb(197, 243, 255);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    /* margin: 10px; */
+    margin-right: 3px;
+    margin-bottom: 3px;
 
 
 
-    .inner-section2 {
-        width: 70%;
-        /* padding: 20px; */
-        box-sizing: border-box;
-        /* display: flex; */
-        justify-content: space-between;
-        background-color: #ffffff; /* Background color for inner-section2 */
-    }
+}
 
-    .div1 {
-        flex: 1;
-        padding: 20px;
-        /* background-color: whitesmoke; Background color for div1 */
-    }
 
-    .div2 {
-        flex: 1;
-        /* padding: 20px; */
-        background-color: #ffffff; /* Background color for div2 */
-    }
+
+.span-div {
+    text-align: center;
+}
+
+.span-div p {
+    padding-bottom: 12px;
+}
 
 
 
 
-    .outercontainer-2 {
-width: 100%;
-display: flex;
+.inner-section2 {
+    justify-content: space-between;
+    background-color: #ffffff;
+    /* Background color for inner-section2 */
+    /* background-color: rebeccapurple; */
+}
+
+.div1 {
+    flex: 1;
+    padding: 20px;
+    /* background-color: whitesmoke; Background color for div1 */
+}
+
+.div2 {
+    flex: 1;
+    /* padding: 20px; */
+    background-color: #ffffff;
+    /* Background color for div2 */
+}
+
+
+
+
+.outercontainer-2 {
+    width: 100%;
+    display: flex;
 }
 
 /* Style for the inner sections */
 .innersection-2 {
-width: 33%;
-padding: 10px;
-box-sizing: border-box;
-/* border: 1px solid #ccc; */
+    /* width: 33%; */
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
 }
 
 
@@ -168,41 +157,41 @@ box-sizing: border-box;
 
 /* Style the tab */
 .tab {
-overflow: hidden;
-border: 1px solid #ccc;
-margin-top: 10% ;
-background-color: #f1f1f1;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top: 10%;
+    background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-background-color: inherit;
-float: left;
-border: none;
-outline: none;
-cursor: pointer;
-padding: 14px 16px;
-transition: 0.3s;
-font-size: 17px;
-width: 33.33%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 33.33%;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
-display: none;
-/* padding: 6px 12px; */
-border-bottom: 1px solid #ccc;
-border-top: none;
+    display: none;
+    /* padding: 6px 12px; */
+    border-bottom: 1px solid #ccc;
+    border-top: none;
 }
 
 /* tab ki css */
@@ -213,17 +202,17 @@ border-top: none;
 /* .outer-container-3 ki css */
 
 .outercontainer-3 {
-width: 100%;
-/* display: flex; */
+    width: 100%;
+    /* display: flex; */
 }
 
 /* Style for the inner sections */
 .innersection-3 {
-width: 100%;
-/* padding: 10px; */
-box-sizing: border-box;
-/* border-bottom: 1px solid #cccccc81;   */
-margin-bottom: 10px;
+    width: 100%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #cccccc81;   */
+    margin-bottom: 10px;
 }
 
 
@@ -237,44 +226,39 @@ margin-bottom: 10px;
 
 
 .outercontainer-4 {
-width: 100%;
-display: flex;
-/* background-color: rgb(247, 253, 255);     */
+    width: 100%;
+    display: flex;
+    /* background-color: rgb(247, 253, 255);     */
 
 }
 
 /* Style for the inner sections */
 .innersection-4 {
-width: 100%;
-/* padding: 10px; */
-box-sizing: border-box;
-/* border: 1px solid #ccc; */
-text-align: center;
+    width: 100%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+    text-align: center;
 }
 
 
+.tabcontent-1 {
+    display: block;
+}
 
-.div-projects{
+.div-projects {
     margin: 0 auto;
 }
 
 
 
-/* .outercontainer-4 */
-
-
-
-
-
-/*         inner section 1 ki css */
-
 
 .button {
-   text-align: center;
-   margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.button button{
+.button button {
     padding: 10px 15px;
     font-size: 15px;
     border-radius: 10px;
@@ -309,14 +293,14 @@ text-align: center;
 /*         inner section 2 ki css */
 
 
-.content-heading{
+.content-heading {
     line-height: 10px;
     margin-bottom: 50px;
 }
 
 
 
-.content-heading2{
+.content-heading2 {
     line-height: 10px;
 }
 
@@ -360,28 +344,28 @@ text-align: center;
 /*         inner section 4 ki css */
 
 
-.innersection-4 img{
+.innersection-4 img {
     border-radius: 50%;
     height: 100px;
     width: 100px;
     padding: 10px;
-    
+
 }
 
 
 .outercontainer-4 {
-/* display: flex;
+    /* display: flex;
 align-items: center;
 justify-content: center; */
 }
 
 
 
-.up-para{
-   font-weight: 500;
-   color: rgb(0, 0, 104);
-   padding-bottom: 10px;
- 
+.up-para {
+    font-weight: 500;
+    color: rgb(0, 0, 104);
+    padding-bottom: 10px;
+
 }
 
 
@@ -391,8 +375,8 @@ justify-content: center; */
 
 
 
-.div-projects a{
-text-decoration: none;
+.div-projects a {
+    text-decoration: none;
 }
 
 /*         inner section 4 ki css */
@@ -422,68 +406,74 @@ text-decoration: none;
 
 
 
-    @media screen and (max-width: 850px) {
-        .outer-container {
-            flex-direction: column;
-            margin-top: 0;
-        }
-
-        .inner-section1, .inner-section2 {
-            width: 100%;
-        }
+@media screen and (max-width: 850px) {
+    .outer-container {
+        flex-direction: column;
+        margin-top: 0;
     }
 
-
-
-
-    @media screen and (max-width: 589px) {
-        .outercontainer-2 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .innersection-2 { 
-            width: 100%;
-            text-align: center;
-        }
-
-        .outercontainer-4 {
-            margin-bottom: 30px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        }
-
+    .inner-section1{
+        width: 100%;
     }
 
+    .inner-section2{
+        width: 100% !important;
+        /* background-color: red; */
+    }
+}
+
+
+
+
+@media screen and (max-width: 589px) {
+    .outercontainer-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .innersection-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .outercontainer-4 {
+        margin-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+}
 
 
 
 
 
 
-        @media screen and (max-width: 450px) {
 
-            .outercontainer-4 {
-                width: 100%;
-                display: flex;
-                background-color: rgb(247, 253, 255);
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
+@media screen and (max-width: 450px) {
 
-        }
+    .outercontainer-4 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(247, 253, 255);
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
 
-
-
+}
 
 
-            @media screen and (max-width: 400px) { 
 
-            }
 
+
+@media screen and (max-width: 400px) {}
 
 
 
 
 
 
-
+.out {
+    width: 100%;
+    /* margin: 0    ; */
+    background-color: chartreuse;
+}
