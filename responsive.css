@@ -3,7 +3,7 @@
       background-color: rebeccapurple;
     }
 
-    
+
     .inner-section-div h2 {
       font-size: 1.7rem;
     }
@@ -63,7 +63,11 @@
   }
   
   
-  
+  @media screen and (max-width: 992px) {
+    .outer-section{
+      background-color: red;
+    }
+  }
   
   
   
