@@ -5,47 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spires | Profile Page</title>
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="studentProfile.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/studentProfile.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
-    <section class="top-nav">
+
+  <section class="top-nav">
 
 
-        <div class="logo-div">
-    
-          <div>
-            <a class="logo" id="logo-spires" onclick="window.location.href='./index.html'"><img src="./assets/logo (1).png"
-                alt=""></a>
-          </div>
-          <!-- <a class="logo" href="#">JobTree</a> -->
-    
-          <input id="menu-toggle" type="checkbox" />
-          <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
-    
-          <ul class="menu">
-            <li><a href="./findInternship.html">Find Internships </a></li>
-            <li> <a href="./findJob.html">Find Jobs </a></li>
-            <li> <a href="./employer.html">Employers </a></li>
-            <li><a href="./candidate.html">Candidates </a></li>
-          </ul>
-    
-    
+    <div class="logo-div">
+
+        <div>
+            <a class="logo" id="logo-spires" href="../index.html"><img src="../assets/logo (1).png" alt=""></a>
         </div>
-    
-      </section>
+        <!-- <a class="logo" href="#">JobTree</a> -->
+
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+
+
+        <ul class="menu">
+            <li><a href="../html/findInternship.html">Find Internships </a></li>
+            <li><a href="../html/findJob.html">Find Job</a></li>
+            <li><a href="../html/employer.html">Employers </a></li>
+            <li><a href="../html/candidate.html">Candidcates </a></li>
+        </ul>
+    </div>
+</section>
     
 
     <div class="outer-container">
         <div class="inner-section1">
             <div class="profile-picture">
                 <div class="img-div">
-                    <img src="./img/photo.jpeg" alt="">
+                    <img src="../img/photo.jpeg" alt="">
                 </div>
             </div>
             <div class="profile-heading">John Doe</div>
@@ -156,7 +154,7 @@
         <div class="innersection-4">
           <!-- Content for the first inner section -->
           <div class="image-logo">
-         <img src="./img/com-logo-1.jpg" alt="ffffff">
+         <img src="../img/com-logo-1.jpg" alt="ffffff">
         </div>
         </div>
         <div class="innersection-4">
@@ -187,7 +185,7 @@
         <div class="innersection-4">
           <!-- Content for the first inner section -->
           <div class="image-logo">
-         <img src="./img/com-logo-1.jpg" alt="ffffff">
+         <img src="../img/com-logo-1.jpg" alt="ffffff">
         </div>
         </div>
         <div class="innersection-4">
@@ -219,7 +217,7 @@
         <div class="innersection-4">
           <!-- Content for the first inner section -->
           <div class="image-logo">
-         <img src="./img/com-logo-1.jpg" alt="ffffff">
+         <img src="../img/com-logo-1.jpg" alt="ffffff">
         </div>
         </div>
         <div class="innersection-4">
@@ -344,67 +342,77 @@
 
     <div class="section5">
 
-        <footer>
-          <div class="footer-section">
+      <footer>
+        <div class="footer-section">
   
-            <div class="img-footer">
-              <img src="./assets/logo.png" height="auto" width="200px" alt="">
-            </div>
-  
-            <div class="para-footer">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
-                voluptatum animi porro inventore expedita?</p>
-            </div>
-  
-  
+          <div class="img-footer">
+            <img src="../assets/logo.png" height="auto" width="200px" alt="">
           </div>
-          <div class="footer-section1">
-            <h3 class="heading-footer" id="footer-nav">Navigation</h3>
-            <ul>
-              <li> Home</li>
-              <li> Jobs</li>
-              <li> Candidates</li>
-              <li> Partners</li>
   
-            </ul>
+          <div class="para-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
+              voluptatum animi porro inventore expedita?</p>
           </div>
-          <div class="footer-section2">
-            <h3 class="heading-footer">Policies</h3>
-            <ul>
-              <li onclick="window.location.href='./about.html'">About Us</li>
-              <li onclick="window.location.href='./contact.html'"> Contact Us</li>
-              <li onclick="window.location.href='./termsAndCondition.html'"> Terms & Conditions</li>
-              <li onclick="window.location.href='./privacyPolicy.html'"> Privacy Policy</li>
-  
-            </ul>
-          </div>
-          <div class="footer-section3">
-            <h3 class="heading-footer">Follow Us</h3>
-            <ul>
-              <li> Blog</li>
-              <li> Twitter</li>
-              <li> Facebook</li>
-              <li> Youtube</li>
-  
-            </ul>
-          </div>
-          <div class="footer-section4">
-            <h3 class="heading-footer">Popular Jobs</h3>
-            <ul>
-              <li> Web Developer</li>
-              <li> Web Designer</li>
-              <li> Ux Developer</li>
-              <li> Account Manager</li>
-  
-            </ul>
-          </div>
-        </footer>
-  
-        <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
-            href="">ActConnect</a></p>
   
   
-          </div>
+        </div>
+        <div class="footer-section1">
+          <h3 class="heading-footer" id="footer-nav">Navigation</h3>
+          <ul>
+            <li> Home</li>
+            <li> Jobs</li>
+            <li> Candidates</li>
+            <li> Partners</li>
+  
+          </ul>
+        </div>
+        <div class="footer-section2">
+          <h3 class="heading-footer">Policies</h3>
+          <ul>
+            <li onclick="window.location.href='../html/about.html'">About Us</li>
+            <li onclick="window.location.href='../html/contact.html'"> Contact Us</li>
+            <li onclick="window.location.href='../html/termsAndCondition.html'"> Terms & Conditions</li>
+            <li onclick="window.location.href='../html/privacyPolicy.html'"> Privacy Policy</li>
+  
+          </ul>
+        </div>
+        <div class="footer-section3">
+          <h3 class="heading-footer">Follow Us</h3>
+          <ul>
+            <li> Blog</li>
+            <li> Twitter</li>
+            <li> Facebook</li>
+            <li> Youtube</li>
+  
+          </ul>
+        </div>
+        <div class="footer-section4">
+          <h3 class="heading-footer">Popular Jobs</h3>
+          <ul>
+            <li> Web Developer</li>
+            <li> Web Designer</li>
+            <li> Ux Developer</li>
+            <li> Account Manager</li>
+  
+          </ul>
+        </div>
+      </footer>
+  
+      <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
+          href="">ActConnect</a></p>
+  
+  
+  
+  
+      <!-- ------------------------- -->
+  
+  
+  
+  
+  
+  
+  
+    </div>
 
     <script>
         function openCity(evt, cityName) {
