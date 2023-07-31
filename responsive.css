@@ -1,4 +1,9 @@
 @media (max-width: 1025px) {
+    .outer-section{
+      background-color: rebeccapurple;
+    }
+
+    
     .inner-section-div h2 {
       font-size: 1.7rem;
     }
