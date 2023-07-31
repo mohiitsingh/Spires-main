@@ -66,6 +66,7 @@
   @media screen and (max-width: 992px) {
     .outer-section{
       background-color: red;
+      height: 50vh;
     }
   }
   
@@ -80,7 +81,6 @@
       flex-direction: column;
       /* background-color: brown; */
       height: 60vh;
-      background-color: yellow;
     }
   
     .inner-section {
