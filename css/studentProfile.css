@@ -17,7 +17,6 @@ body {
     max-width: 1200px;
     /* Adjust this value as needed */
     margin: 0 auto;
-    background-color: red;
 }
 
 .inner-section1 {
@@ -116,7 +115,6 @@ body {
 .inner-section2 {
     justify-content: space-between;
     background-color: #ffffff;
-    /* Background color for inner-section2 */
     /* background-color: rebeccapurple; */
 }
 
@@ -124,13 +122,14 @@ body {
     flex: 1;
     padding: 20px;
     /* background-color: whitesmoke; Background color for div1 */
+    /* background-color: beige; */
 }
 
 .div2 {
     flex: 1;
     /* padding: 20px; */
     background-color: #ffffff;
-    /* Background color for div2 */
+    /* background-color: yellow; */
 }
 
 
@@ -139,15 +138,12 @@ body {
 .outercontainer-2 {
     width: 100%;
     display: flex;
+    padding: 2rem 0;
+    /* justify-content: space-around; */
+    gap: 100px;
 }
 
-/* Style for the inner sections */
-.innersection-2 {
-    /* width: 33%; */
-    padding: 10px;
-    box-sizing: border-box;
-    /* border: 1px solid #ccc; */
-}
+
 
 
 
@@ -159,7 +155,7 @@ body {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     background-color: #f1f1f1;
 }
 
@@ -209,9 +205,6 @@ body {
 /* Style for the inner sections */
 .innersection-3 {
     width: 100%;
-    /* padding: 10px; */
-    box-sizing: border-box;
-    /* border-bottom: 1px solid #cccccc81;   */
     margin-bottom: 10px;
 }
 
@@ -228,17 +221,21 @@ body {
 .outercontainer-4 {
     width: 100%;
     display: flex;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
     /* background-color: rgb(247, 253, 255);     */
+    /* background-color: rebeccapurple; */
 
 }
 
 /* Style for the inner sections */
 .innersection-4 {
-    width: 100%;
-    /* padding: 10px; */
-    box-sizing: border-box;
-    /* border: 1px solid #ccc; */
-    text-align: center;
+    /* width: 30%; */
+    /* background-color: red; */
+    height: 15vh;
+    padding: 10px;
 }
 
 
@@ -267,6 +264,7 @@ body {
     background-color: rgb(0, 191, 255);
     color: white;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 
@@ -345,25 +343,19 @@ body {
 
 
 .innersection-4 img {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    padding: 10px;
+    height: 80px;
+    width: 80px;
+    /* padding: 10px; */
 
 }
 
 
-.outercontainer-4 {
-    /* display: flex;
-align-items: center;
-justify-content: center; */
-}
 
 
 
 .up-para {
     font-weight: 500;
-    color: rgb(0, 0, 104);
+    color: rgb(3, 3, 154);
     padding-bottom: 10px;
 
 }
@@ -377,6 +369,7 @@ justify-content: center; */
 
 .div-projects a {
     text-decoration: none;
+    color: rgb(0, 191, 255);
 }
 
 /*         inner section 4 ki css */

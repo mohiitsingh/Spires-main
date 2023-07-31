@@ -46,6 +46,7 @@ input::placeholder{
 
 
 
+
 button{
     padding: 8px 10px;
     background-color: black;
@@ -63,6 +64,15 @@ button{
     margin: 10px;
     display: inline-block;
     vertical-align: top;
+}
+
+.profile-card h3{
+    margin: 3px 0;
+    margin-left: 2px;
+}
+
+.profile-card p{
+    margin: 2px 0;
 }
 
 .profile-card img {

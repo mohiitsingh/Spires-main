@@ -1,16 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spires | Internship</title>
-	<link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/intershipForm.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Spires | Candidate Form</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        label{
+            font-weight: bold;
+        }
+        .btn-primary{
+            background-color: orange;
+            border: none;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .btn-primary:hover{
+            background-color: black;
+        }
+
+    </style>
 </head>
 
 <body>
-    
     <section class="top-nav">
 
 
@@ -35,130 +56,215 @@
             </ul>
         </div>
     </section>
-    <div class="form-div">
-        <h1>Intern Application Form</h1>
-        <form action="#" method="post">
-            <div>
-                <label class="label name" for="first-name" required >Name:</label>
-                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
-            </div>
-            <div>
-                <label class="label birth" for="birth-date" required>Birth Date:</label>
-                <select name="Month" id="">
-                    <option value="">Month</option>
-                    <option value="">January</option>
-                    <option value="">February</option>
-                    <option value="">March</option>
-                    <option value="">April</option>
-                    <option value="">May</option>
-                    <option value="">June</option>
-                    <option value="">July</option>
-                    <option value="">August</option>
-                    <option value="">September</option>
-                    <option value="">October</option>
-                    <option value="">November</option>
-                    <option value="">December</option>
-                </select>
-                <select name="Date" id="">
-                    <option value="">Date</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                    <option value="">13</option>
-                    <option value="">14</option>
-                </select>
-                <select name="Year" id="">
-                    <option value="">Year</option>
-                    <option value="">2017</option>
-                    <option value="">2018</option>
-                    <option value="">2019</option>
-                    <option value="">2020</option>
-                    <option value="">2021</option>
-                    <option value="">2022</option>
-                    <option value="">2023</option>
-                </select>
-            </div>
-            <div>
-                <label class="label phone" for="phone-number" required >Phone Number:</label>
-                <input type="tel" id="phone-number" class="input" name="phone-number" placeholder="Phone Number" required
-                    >
-            </div>
-            <div>
-                <label class="label email" for="email" required >Email:</label>
-                <input type="email" id="email" class="input" name="email" placeholder="Email" required >
-            </div>
-            <div>
-                <label class="label twitter" >Twitter Handle:</label>
-                <input type="text" class="input" name="twitter-handle" placeholder="Twitter Handle" >
-            </div>
-            <div>
-                <label class="label instagram" >Instagram Handle:</label>
-                <input type="text" class="input" name="instagram-handle" placeholder="Instagram Handle" >
-            </div>
-            <div>
-                <label class="label facebook">Facebook URL:</label>
-                <input type="text" class="input" name="facebook-url" placeholder="Facebook URL" >
-            </div>
-            <div>
-                <label class="label city" for="city" required>Address:</label>
-                <input type="text" id="city" name="city" placeholder="City" required>
-                <input type="text" id="state" name="city" placeholder="State" required>
-            </div>
-            <div>
-                <label class="label referred" required>How were you referred to us?</label>
 
-                <input type="checkbox" name="referral[]" value="twitter"> Twitter
-                <input type="checkbox" class="facebook2" name="referral[]" value="facebook"> Facebook
-                <input type="checkbox" name="referral[]" value="instagram"> Instagram
-            </div>
-            <div>
-                <label class="label resume" for="resume" required>Upload Resume:</label>
-                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-            </div>
-            <div>
-                <label class="label photo" for="photo" required>Upload Photo:</label>
-                <input type="file" id="photo" name="photo" accept=".jpg,.png,.jpeg" required>
-            </div>
-            <div class="position-div">
-                <label class="label position" required>Position:</label>
-                <input type="checkbox" name="position[]" value="manager"> Manager
-                <input type="checkbox" class="second-position" name="position[]" value="teacher"> Teacher
-                <input type="checkbox" class="third-position" name="position[]" value="social-media-team"> Social Media Team
-            </div>
-            <div>
-                <label required class="label college" for="college" >College:</label>
-                <input type="text" class="input" id="college" name="college" placeholder="College" required >
-            </div>
-            <div>
-                <label class="label graduation" for="graduation-year" required>Graduation
-                    Year:</label>
-                <input type="number" id="graduation-year" class="input" name="graduation-year" placeholder="Graduation Year" required
-                    >
-            </div>
-            <div class="why-intern">
-                <div>
-                    <label class="label" for="why-intern" required>Why do you want to intern for us?</label>
+    <div class="container my-5">
+        <div class="row container">
+            <h1 class="text-center">Intern Application Form</h1>
+            <hr class="w-50 mx-auto">
+            <form class="row g-2">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">First Name:</label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <label for="inputCity" class="form-label">Month:</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Month</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <label for="inputState" class="form-label">Day:</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Day</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <label for="inputZip" class="form-label">Zip:</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Zip</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Phone:</label>
+                    <input type="number" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Twitter Handle:</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Instagram Handle:</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Facebook Handle:</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Resume:</label>
+                    <input class="form-control" type="file" id="formFile">
                 </div>
                 <div>
-                    <textarea id="why-intern" name="why-intern" rows="4" required ></textarea>
+                    <label for="" style="margin-right: 20px;">How were you referred to us?</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Twitter</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Facebook</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Instagram</label>
+                    </div>
                 </div>
-            </div>
-            <div class="btn">
-                <button type="submit">Submit Application</button>
-            </div>
-        </form>
-
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Photo:</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div>
+                    <label for="" style="margin-right: 20px;">Position:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Manager</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Teacher</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Social Media Manager</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Manager</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">College:</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Graduation Year:</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Why do you want to intern for
+                        us?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <div class="section5">
+
+        <footer>
+          <div class="footer-section">
+    
+            <div class="img-footer">
+              <img src="./assets/logo.png" height="auto" width="200px" alt="">
+            </div>
+    
+            <div class="para-footer">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
+                voluptatum animi porro inventore expedita?</p>
+            </div>
+    
+    
+          </div>
+          <div class="footer-section1">
+            <h3 class="heading-footer" id="footer-nav">Navigation</h3>
+            <ul>
+              <li> Home</li>
+              <li> Jobs</li>
+              <li> Candidates</li>
+              <li> Partners</li>
+    
+            </ul>
+          </div>
+          <div class="footer-section2">
+            <h3 class="heading-footer">Policies</h3>
+            <ul>
+              <li onclick="window.location.href='./html/about.html'">About Us</li>
+              <li onclick="window.location.href='./html/contact.html'"> Contact Us</li>
+              <li onclick="window.location.href='./html/termsAndCondition.html'"> Terms & Conditions</li>
+              <li onclick="window.location.href='./html/privacyPolicy.html'"> Privacy Policy</li>
+    
+            </ul>
+          </div>
+          <div class="footer-section3">
+            <h3 class="heading-footer">Follow Us</h3>
+            <ul>
+              <li> Blog</li>
+              <li> Twitter</li>
+              <li> Facebook</li>
+              <li> Youtube</li>
+    
+            </ul>
+          </div>
+          <div class="footer-section4">
+            <h3 class="heading-footer">Popular Jobs</h3>
+            <ul>
+              <li> Web Developer</li>
+              <li> Web Designer</li>
+              <li> Ux Developer</li>
+              <li> Account Manager</li>
+    
+            </ul>
+          </div>
+        </footer>
+    
+        <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
+            href="">ActConnect</a></p>
+    
+    
+    
+    
+        <!-- ------------------------- -->
+    
+    
+    
+    
+    
+    
+    
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
