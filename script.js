@@ -127,14 +127,6 @@ document.getElementById("resumeInput").addEventListener("change", function (even
 
 
 
-
-
-
-
-
-
-
-
 const modal = document.getElementById("modal");
 const uploadBtn = document.getElementById("uploadBtn");
 const closeBtn = document.getElementById("closeBtn");

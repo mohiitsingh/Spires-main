@@ -139,8 +139,9 @@ function displayJobs(jobs) {
       </div>
       <div class="para-div">
         <p class="Job-opening">Jobs Openings:${" "+job.Jobopenings}</p>
-        <p><i class="fa fa-angle-right right-arrow"></i>${job.Jobdetail}</p>
-        <p><i class="fa fa-angle-right right-arrow"></i>${job.Jobdetail2}</p>
+        <p><i class="fa fa-angle-right right-arrow"></i><a href="./jobDetail.html">${job.Jobdetail}</a></p>
+        <p><i class="fa fa-angle-right right-arrow"></i><a href="./jobDetail.html">${job.Jobdetail2}</a></p>
+        <button onclick="window.location.href='./findJob.html'"><a href="./findJob.html">See More Jobs</a></button>
       </div>
     `;
     cardContainer.appendChild(card);

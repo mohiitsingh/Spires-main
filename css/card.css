@@ -5,7 +5,10 @@
   padding: 0;
 }
 
-
+a{
+  text-decoration: none;
+  color: black;
+}
 
 .container {
   margin: 0 auto;
@@ -107,13 +110,18 @@ p{
   border: 0.1px solid #ddd;
   padding: 25px 20px;
   background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
-  transition: box-shadow 0.3s ease;
+  background-color: white;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.09);
+  transition:  0.3s ease-in-out;
   width: 360px;
   filter: brightness(110%);
   cursor: pointer;
   border-radius: 8px;
-  height: 250px;
+  height: 270px;
+}
+
+.job-card:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.488);
 }
 
 
@@ -138,7 +146,36 @@ p{
   display: flex;
   flex-direction: column;
   gap: 3px;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.para-div a:hover{
+  color: orangered;
+}
+
+.para-div button {
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  color: white;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.para-div button a{
+  color: white;
+}
+
+.para-div button:hover a{
+  color: black;
+  font-weight: bold;
+}
+
+.para-div button:hover{
+  background-color: orange;
 }
 
 
@@ -148,28 +185,16 @@ p{
   gap: 2px;
 }
 
-.job-card p:nth-child(3) {
-  /* color: rgb(255, 8, 0) !important;   */
-}
 
 .job-card p:nth-child(4) {
-  /* color: chartreuse !important; */
   padding-bottom: 15px;
 
 }
-
-/* .job-card div{
-    display: flex;
-} */
 
 
 .job-card p:nth-child(5) {
   color: rgb(0, 0, 0) !important;
   font-size: 18px;
-  /* padding-bottom: 10px; */
-
-  /* padding-bottom: 25px; */
-
 }
 
 
@@ -184,16 +209,6 @@ p{
   color: rgb(0, 0, 0) !important;
   /* padding-bottom: 25px; */
 
-}
-
-
-.job-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.job-card h3 {
-  /* margin-top: 12px; */
-  /* padding-bottom: 5px; */
 }
 
 .Job-opening{
