@@ -1,202 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spires | Employers</title>
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/employer.css">
-	<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
+
 <body>
+
+  <div class="container">
+
+
     <section class="top-nav">
 
 
-		<div class="logo-div">
+      <div class="logo-div">
 
-			<div>
-				<a class="logo" id="logo-spires" href="../index.html"><img
-						src="../assets/logo (1).png" alt=""></a>
-			</div>
-			<!-- <a class="logo" href="#">JobTree</a> -->
+        <div>
+          <a class="logo" id="logo-spires" onclick="window.location.href='../index.html'"><img
+              src="../assets/logo (1).png" alt=""></a>
+        </div>
+        <!-- <a class="logo" href="#">JobTree</a> -->
 
-			<input id="menu-toggle" type="checkbox" />
-			<label class='menu-button-container' for="menu-toggle">
-				<div class='menu-button'></div>
-			</label>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
 
-			<ul class="menu">
-				<a href="../html/about.html"></a>
-				<li><a href="../html/findInternship.html">Find Internships </a></li>
-				<li> <a href="../html/findJob.html">Find Jobs </a></li>
-				<li> <a href="../html/employer.html">Employers </a></li>
-				<li><a href="../html/candidate.html">Candidates </a></li>
-			</ul>
+        <ul class="menu">
+          <li><a href="../html/findInternship.html">Find Internships </a></li>
+          <li> <a href="../html/findJob.html">Find Jobs </a></li>
+          <li> <a href="../html/employer.html">Employers </a></li>
+          <li><a href="../html/candidate.html">Candidates </a></li>
+        </ul>
 
 
-		</div>
-
-	</section>
-
-	<div class="filter-container">
-		<div class="profile-div">
-		  <label for="profile-filter">Job Profile:</label>
-		  <input type="text" id="profile-filter" placeholder="Filter by job profile">
-		</div>
-	
-	
-	
-		<div class="company-div">
-		  
-		<label for="company-filter">Company Name:</label>
-		<input type="text" id="company-filter" placeholder="Filter by company name">
-		</div>
-	
-	
-		<div class="location-div">
-		  <label for="location-filter">Location:</label>
-		  <input type="text" id="location-filter" placeholder="Filter by job location">
-		</div>
-	
-	
-		<div class="search-div">
-		  <button id="search-button">Search</button>
-		</div>
-	   
-	  </div>
-	  
-	  <div class="card-container" id="card-container">
-		<!-- Sample Job Cards -->
-		<div class="job-card">
-		  <div class="img-title-div">
-			<div class="img-div">
-			  <img src="./google-logo.jpg" alt="">
-			</div>
-	
-			<div class="title-div">
-			  <p>Google</p>
-			</div>
-	
-		</div>
-	
-	
-		  <h3>Web Developer</h3>
-		  <p>Location: New York</p>
-		  <p>Job Type: Fulltime</p>
-	
-		  <br>
-		  <br>
-	
-		  <ul><strong> Explore More Job Openings </strong> ( 02 ) </ul>
-	
-	
-		  <li> <a href="">Software Developer &nbsp; Java &nbsp; (1 -4 yrs)</a> </li>
-		  <li> <a href="">Software Developer &nbsp; Java &nbsp; (1 -4 yrs)</a> </li>
-		  <!-- <li>Software Developer &nbsp; Java &nbsp; (1 -2 yrs)</li> -->
-	   
-		
-		</div>
-	
-	
-	
-		<div class="job-card">
-		  <h3>Data Scientist</h3>
-		  <p>Company: XYZ Analytics</p>
-		  <p>Location: San Francisco</p>
-		</div>
-	
-	
-		<div class="job-card">
-		  <h3>UX Designer</h3>
-		  <p>Company: Design Co.</p>
-		  <p>Location: London</p>
-		</div>
-		<div class="job-card">
-		  <h3>Software Engineer</h3>
-		  <p>Company: Tech Solutions</p>
-		  <p>Location: Seattle</p>
-		</div>
-		<div class="job-card">
-		  <h3>Marketing Manager</h3>
-		  <p>Company: Global Marketing Inc.</p>
-		  <p>Location: Paris</p>
-		</div>
-	  </div>
-
-	  <div class="section5">
-
-        <footer>
-          <div class="footer-section">
-    
-            <div class="img-footer">
-              <img src="../assets/logo.png" height="auto" width="200px" alt="">
-            </div>
-    
-            <div class="para-footer">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
-                voluptatum animi porro inventore expedita?</p>
-            </div>
-    
-    
-          </div>
-          <div class="footer-section1">
-            <h3 class="heading-footer" id="footer-nav">Navigation</h3>
-            <ul>
-              <li> Home</li>
-              <li> Jobs</li>
-              <li> Candidates</li>
-              <li> Partners</li>
-    
-            </ul>
-          </div>
-          <div class="footer-section2">
-            <h3 class="heading-footer">Policies</h3>
-            <ul>
-              <li onclick="window.location.href='../html/about.html'">About Us</li>
-              <li onclick="window.location.href='../html/contact.html'"> Contact Us</li>
-              <li onclick="window.location.href='../html/termsAndCondition.html'"> Terms & Conditions</li>
-              <li onclick="window.location.href='../html/privacyPolicy.html'"> Privacy Policy</li>
-    
-            </ul>
-          </div>
-          <div class="footer-section3">
-            <h3 class="heading-footer">Follow Us</h3>
-            <ul>
-              <li> Blog</li>
-              <li> Twitter</li>
-              <li> Facebook</li>
-              <li> Youtube</li>
-    
-            </ul>
-          </div>
-          <div class="footer-section4">
-            <h3 class="heading-footer">Popular Jobs</h3>
-            <ul>
-              <li> Web Developer</li>
-              <li> Web Designer</li>
-              <li> Ux Developer</li>
-              <li> Account Manager</li>
-    
-            </ul>
-          </div>
-        </footer>
-    
-        <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
-            href="">ActConnect</a></p>
-    
-    
-    
-    
-        <!-- ------------------------- -->
-    
-    
-    
-    
-    
-    
-    
       </div>
-    
-    <script src="../script2.js"></script>
+
+    </section>
+
+
+
+
+    <!--  -->
+
+
+
+    <div class="filter-container">
+      <div class="profile-div">
+        <label for="profile-filter">Job Profile:</label>
+        <input type="text" id="profile-filter" placeholder="Job profile">
+      </div>
+
+
+
+      <div class="company-div">
+
+        <label for="company-filter">Company Name:</label>
+        <input type="text" id="company-filter" placeholder="Company name">
+      </div>
+
+
+      <div class="location-div">
+        <label for="location-filter">Location:</label>
+        <input type="text" id="location-filter" placeholder="Job location">
+      </div>
+
+
+      <div class="search-div">
+        <button id="search-button">Search</button>
+      </div>
+
+    </div>
+
+    <div class="card-container" id="card-container">
+      <!-- Sample Job Cards -->
+      <div class="job-card">
+        <div class="img-title-div">
+          <div class="img-div">
+            <img src="./google-logo.jpg" alt="">
+          </div>
+
+          <div class="title-div">
+            <p>Google</p>
+          </div>
+
+        </div>
+
+
+        <h3>Web Developer</h3>
+        <p>Location: New York</p>
+        <p>Job Type: Fulltime</p>
+
+        <br>
+        <br>
+
+        <ul><strong> Explore More Job Openings </strong> ( 02 ) </ul>
+
+
+        <li> <a href="">Software Developer &nbsp; Java &nbsp; (1 -4 yrs)</a> </li>
+        <li> <a href="">Software Developer &nbsp; Java &nbsp; (1 -4 yrs)</a> </li>
+        <!-- <li>Software Developer &nbsp; Java &nbsp; (1 -2 yrs)</li> -->
+
+
+      </div>
+
+
+
+      <div class="job-card">
+        <h3>Data Scientist</h3>
+        <p>Company: XYZ Analytics</p>
+        <p>Location: San Francisco</p>
+      </div>
+
+
+      <div class="job-card">
+        <h3>UX Designer</h3>
+        <p>Company: Design Co.</p>
+        <p>Location: London</p>
+      </div>
+      <div class="job-card">
+        <h3>Software Engineer</h3>
+        <p>Company: Tech Solutions</p>
+        <p>Location: Seattle</p>
+      </div>
+      <div class="job-card">
+        <h3>Marketing Manager</h3>
+        <p>Company: Global Marketing Inc.</p>
+        <p>Location: Paris</p>
+      </div>
+    </div>
+
+
+    <!--  -->
+
+
+
+
+
+    <!-- Footer -->
+
+
+
+    <div class="section5">
+
+      <footer>
+        <div class="footer-section">
+
+          <div class="img-footer">
+            <img src="../assets/logo.png" height="auto" width="200px" alt="">
+          </div>
+
+          <div class="para-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque culpa
+              voluptatum animi porro inventore expedita?</p>
+          </div>
+
+
+        </div>
+        <div class="footer-section1">
+          <h3 class="heading-footer" id="footer-nav">Navigation</h3>
+          <ul>
+            <li> Home</li>
+            <li> Jobs</li>
+            <li> Candidates</li>
+            <li> Partners</li>
+
+          </ul>
+        </div>
+        <div class="footer-section2">
+          <h3 class="heading-footer">Policies</h3>
+          <ul>
+            <li onclick="window.location.href='./about.html'">About Us</li>
+            <li onclick="window.location.href='./contact.html'"> Contact Us</li>
+            <li onclick="window.location.href='./termsAndCondition.html'"> Terms & Conditions</li>
+            <li onclick="window.location.href='./privacyPolicy.html'"> Privacy Policy</li>
+
+          </ul>
+        </div>
+        <div class="footer-section3">
+          <h3 class="heading-footer">Follow Us</h3>
+          <ul>
+            <li> Blog</li>
+            <li> Twitter</li>
+            <li> Facebook</li>
+            <li> Youtube</li>
+
+          </ul>
+        </div>
+        <div class="footer-section4">
+          <h3 class="heading-footer">Popular Jobs</h3>
+          <ul>
+            <li> Web Developer</li>
+            <li> Web Designer</li>
+            <li> Ux Developer</li>
+            <li> Account Manager</li>
+
+          </ul>
+        </div>
+      </footer>
+
+      <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
+          href="">ActConnect</a></p>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+  <script src="../script2.js"></script>
 </body>
+
 </html>

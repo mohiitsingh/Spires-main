@@ -188,6 +188,8 @@ body {
     /* padding: 6px 12px; */
     border-bottom: 1px solid #ccc;
     border-top: none;
+    background-color: whitesmoke;
+    padding: 20px;
 }
 
 /* tab ki css */
@@ -226,7 +228,6 @@ body {
     justify-content: space-around;
     gap: 20px;
     /* background-color: rgb(247, 253, 255);     */
-    /* background-color: rebeccapurple; */
 
 }
 
@@ -345,8 +346,6 @@ body {
 .innersection-4 img {
     height: 80px;
     width: 80px;
-    /* padding: 10px; */
-
 }
 
 
