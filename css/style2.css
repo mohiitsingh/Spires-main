@@ -78,19 +78,7 @@
 }
 
 
-/* .login-btn{
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
 
-.login-btn:hover{
-    color: white;
-    background-color: orange;
-} */
 @media screen and (max-width: 992px) {
     .banner{
         height: 10vh;

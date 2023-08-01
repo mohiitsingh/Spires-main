@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./css/nav2.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./css/form.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <script src="script.js" defer></script>
 </head>
@@ -93,7 +94,7 @@
 
 
       </div>
-      <div class="inner-section2" >
+      <div class="inner-section2">
         <div class="inner-section2-div">
           <img src="./assets/pngwing.com3.png" alt="">
         </div>
@@ -103,11 +104,11 @@
   </div>
 
 
-  
+
   <div class="container-xxl py-5">
     <div class="container">
       <h1 class="text-center mb-5 wow fadeInUp">Explore By Category</h1>
-      <div class="row g-4" >
+      <div class="row g-4">
         <div class="col-lg-3 col-sm-6 wow fadeInUp">
           <a class="cat-item rounded p-4" href="">
             <i class="fa fa-3x fa-mail-bulk color mb-4"></i>
@@ -168,347 +169,481 @@
     </div>
   </div>
 
+  <!-- <div class="banner">
+    <h1>We Help To Get The Best Job And Internship</h1>
+    <button class="upload-button" id="uploadBtn">Upload Resume</button>
+  </div> -->
+
   <div class="banner">
     <h1>We Help To Get The Best Job And Internship</h1>
-    <button class="upload-button">Upload Resume</button>
+    <button id="uploadBtn" class="upload-button">Upload Resume</button>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <div class="form-container">
+        <div class="personal-info">
+
+          <div>
+
+
+            <label for="countryCode"> <strong>Country Code :- &nbsp;&nbsp; </strong></label>
+            <input type="text" id="countryCode" placeholder="+91" required>
+          </div>
+
+
+
+          <div>
+
+
+
+            <label for="phoneNumber"><strong>Phone Number :- &nbsp;</strong></label>
+            <input type="tel" id="phoneNumber" placeholder="Your phone number" required>
+
+          </div>
+
+
+
+          <div>
+
+
+
+
+            <label for="emailAddress"><strong>Email Address :- &nbsp;</strong></label>
+            <input type="email" id="emailAddress" placeholder="Your email address" required>
+
+          </div>
+        </div>
+
+        <div class="upload-box">
+          <input type="file" id="resumeInput" accept=".pdf, .doc, .docx">
+          <label for="resumeInput">
+            <span>Drag & Drop or Click to Upload</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M17 2H7c-1.1 0-2 .9-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4c0-1.1-.9-2-2-2zm0 18H7V4h10v16zM12 5v5l2.5-1.5L17 10V5h-5zm7 6h-2v2h-2v-2H7V7h10v4z" />
+            </svg>
+          </label>
+          <div class="status" id="status"></div>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submitBtn">Submit</button>
+    </div>
+  </div>
   </div>
 
-  
   <div class="container-xxl py-5">
     <div class="container">
-        <h1 class="text-center mb-5 wow fadeInUp" >Job Listing</h1>
-        <div class="tab-class text-center wow fadeInUp" >
-            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-                <li class="nav-item">
-                    <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                        <h6 class="mt-n1 mb-0">Featured</h6>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
-                        <h6 class="mt-n1 mb-0">Full Time</h6>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
-                        <h6 class="mt-n1 mb-0">Part Time</h6>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div id="tab-1" class="tab-pane fade show p-0 active">
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Software Engineer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Mumbai, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Marketing Manager</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Chennai, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Product Designer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Creative Director</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Bhopal, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Wordpress Developer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Indore, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+      <h1 class="text-center mb-5 wow fadeInUp">Job Listing</h1>
+      <div class="tab-class text-center wow fadeInUp">
+        <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+          <li class="nav-item">
+            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+              <h6 class="mt-n1 mb-0">Featured</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+              <h6 class="mt-n1 mb-0">Full Time</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+              <h6 class="mt-n1 mb-0">Part Time</h6>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab-1" class="tab-pane fade show p-0 active">
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Software Engineer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Mumbai,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
                 </div>
-                <div id="tab-2" class="tab-pane fade show p-0">
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Software Engineer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Bhopal, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                      </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Marketing Manager</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Indore, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Product Designer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Kolkata, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Creative Director</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Pune, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Wordpress Developer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
                 </div>
-                <div id="tab-3" class="tab-pane fade show p-0">
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Software Engineer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Marketing Manager</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Product Designer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Creative Director</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job-item p-4 mb-4">
-                        <div class="row g-4">
-                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
-                                <div class="text-start ps-4">
-                                    <h5 class="mb-3">Wordpress Developer</h5>
-                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa, INDIA</span>
-                                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                <div class="d-flex mb-3">
-                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
-                                </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
-                </div>
+              </div>
             </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Marketing Manager</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Chennai,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Product Designer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Creative Director</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Bhopal,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Wordpress Developer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Indore,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+          </div>
+          <div id="tab-2" class="tab-pane fade show p-0">
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Software Engineer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Bhopal,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Marketing Manager</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Indore,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Product Designer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Kolkata,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Creative Director</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Pune,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Wordpress Developer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+          </div>
+          <div id="tab-3" class="tab-pane fade show p-0">
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Software Engineer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Marketing Manager</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Product Designer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Creative Director</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <div class="job-item p-4 mb-4">
+              <div class="row g-4">
+                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt=""
+                    style="width: 80px; height: 80px;">
+                  <div class="text-start ps-4">
+                    <h5 class="mb-3">Wordpress Developer</h5>
+                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rewa,
+                      INDIA</span>
+                    <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
+                      $456</span>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                  <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary" href="./html/jobDetail.html">Apply Now</a>
+                  </div>
+                  <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                    2045</small>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
   <div class="section5">
 
@@ -583,6 +718,56 @@
 
 
   </div>
+
+  <script>
+    document.getElementById("resumeInput").addEventListener("change", function (event) {
+      const file = event.target.files[0];
+      const statusElement = document.getElementById("status");
+
+      statusElement.innerText = "Uploading...";
+
+      // Simulate an upload process with a setTimeout for demonstration purposes
+      setTimeout(() => {
+        if (file) {
+          statusElement.innerText = "Upload successful!";
+          statusElement.classList.add("success");
+        } else {
+          statusElement.innerText = "Upload failed!";
+          statusElement.classList.add("error");
+        }
+      }, 2000);
+    });
+
+
+    const modal = document.getElementById("modal");
+    const uploadBtn = document.getElementById("uploadBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+    // Show the modal when the upload button is clicked
+    uploadBtn.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+
+    // Hide the modal when the close button is clicked
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Hide the modal when clicking outside the modal content
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    // Code for handling the resume upload process (similar to previous example)
+    document.getElementById("resumeInput").addEventListener("change", function (event) {
+      // ...
+      // Resume upload handling code goes here
+      // ...
+    });
+
+  </script>
 
 </body>
 
