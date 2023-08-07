@@ -206,17 +206,18 @@
     width: 100%;
     /* display: flex; */
     /* background-color: rebeccapurple; */
-    background-color: aliceblue;
+    background-color: aliceblue;;
 }
 
 /* Style for the inner sections */
 .innersection-3 {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     /* background-color: red; */
-    border: 0.1px dashed black;
+    /* border: 0.1px dashed black; */
+    border: 1px solid black;
     padding: 20px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 
