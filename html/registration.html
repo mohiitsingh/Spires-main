@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting</title>
+    <link rel="stylesheet" href="../css/jobPostingRegistration.css">
+</head>
+
+<style>
+    .modal__wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s ease-in-out;
+    }
+
+    .modal__container {
+        background: #fff;
+        width: 560px;
+        max-width: 90%;
+        padding: 20px 30px;
+        border-radius: 4px;
+        position: relative;
+        transform: translateY(-100%);
+        transition: all .3s ease-in-out;
+    }
+
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .modal__container button.close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 32px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .modal__container button.close:hover {
+        color: #6B46C1;
+    }
+
+    .active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal__wrapper.active .modal__container {
+        transform: translateY(0px);
+    }
+
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    ul {
+        margin-bottom: 40px;
+    }
+
+    label {
+        font-weight: bold;
+        margin: 15px 14px;
+    }
+</style>
+
+<body>
+
+    <section class="container">
+        <div class="heading-div">
+            <h1>Hire next Interns at <span>Spires</span></h1>
+            <h4>Post jobs for <span>free</span> now</h4>
+        </div>
+        <div class="hero">
+            <div class="hero-left">
+                <div class="image-div">
+                    <img src="../assets/employer-registration.99a84327c283de29084e.png" alt="">
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="form">
+                    <form action="">
+                        <h2>Create an account to continue</h2>
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Official Email Id">
+                        <input type="number" placeholder="Mobile Number">
+                        <input type="password" placeholder="Password">
+
+                        <p>By registering, you agree to our <a href="#" class="term btn__purple" id="trigger">Terms and
+                                Conditions.</a></p>
+                        <div class="modal__wrapper">
+                            <div class="modal__container">
+                                <button class="close">&times;</button>
+                                <h2>Important Guidelines</h2>
+                                <ul>
+                                    <li>User-Friendly Interface: The job portal should have a clean and intuitive
+                                        interface to make it easy for users to navigate and find relevant job listings.
+                                    </li>
+                                    <li>Responsive Design: Ensure that the job portal is responsive and adapts to
+                                        different screen sizes, including desktops, tablets, and mobile devices.</li>
+                                    <li>Clear Search Functionality: Implement an effective search feature that allows
+                                        users to search for jobs based on keywords, location, category, and other
+                                        relevant filters.</li>
+                                    <li>Easy Job Application Process: Simplify the job application process to encourage
+                                        more candidates to apply. Include an option to upload resumes and cover letters.
+                                    </li>
+                                </ul>
+                                <label>
+                                    <input type="checkbox" name="agree" id="agree">
+                                    Agree with Terms and Conditions
+                                </label>
+                                <div class="action">
+                                    <button class="btn__purple">Accept</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="window.location.href='./login.html'"><a
+                                href="./login.html">Register</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const trigger = document.querySelector('#trigger');
+        const modalWrapper = document.querySelector('.modal__wrapper');
+        const closeBtn = document.querySelector('.close');
+
+        trigger.addEventListener('click', function () {
+            openModal();
+        });
+
+        closeBtn.addEventListener('click', function () {
+            closeModal();
+        });
+
+        modalWrapper.addEventListener('click', function (e) {
+            if (e.target !== this) return;
+            closeModal();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        })
+
+        function openModal() {
+            modalWrapper.classList.add('active');
+        }
+        function closeModal() {
+            modalWrapper.classList.remove('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
