@@ -6,50 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Spires</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/signUp.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
 </head>
 
 <body>
-    <div class="signUp-heading">
-        <h1>Welcome Back!!</h1>
-    </div>
+    <section class="top-nav">
 
-    <div class="signUp-container">
-        <form action="" method="post">
-            <!-- Sign up with Google section -->
-            <div class="signUp-google">
-                <!-- <img src="./assets/google1.png" height="33px" alt="" style="display: inline; margin-top: 5px;"> -->
-                <button type="button" class="google-btn"><i class="fab fa-google"></i> Login with Google</button>
-            </div>
 
-            <div class="OR">
-                <div class="line">
-
-                </div>
-                <div>
-                    OR
-                </div>
-                <div class="line">
-
-                </div>
-            </div>
-
-            <!-- Email and Password section -->
-            <div class="email-div">
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+        <div class="logo-div">
 
             <div>
-                <button type="submit" class="submit">Login</button>
+                <a class="logo" id="logo-spires" href="../index.html"><img src="../assets/logo (1).png" alt=""></a>
             </div>
-            <p>Not registered yet? <a href="./signUp.html">Signup</a></p>
-        </form>
+            <!-- <a class="logo" href="#">JobTree</a> -->
+
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+
+
+            <ul class="menu">
+                <li><a href="../html/findInternship.html">Find Internships </a></li>
+                <li><a href="../html/findJob.html">Find Job</a></li>
+                <li><a href="../html/employer.html">Employers </a></li>
+                <li><a href="../html/candidate.html">Candidcates </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="body-container">
+        <div class="signUp-heading">
+            <h1>Welcome Back!!</h1>
+        </div>
+    
+        <div class="signUp-container">
+            <form action="" method="post">
+                <!-- Sign up with Google section -->
+                <div class="signUp-google">
+                    <!-- <img src="./assets/google1.png" height="33px" alt="" style="display: inline; margin-top: 5px;"> -->
+                    <button type="button" class="google-btn"><i class="fab fa-google"></i> Login with Google</button>
+                </div>
+    
+                <div class="OR">
+                    <div class="line">
+    
+                    </div>
+                    <div>
+                        OR
+                    </div>
+                    <div class="line">
+    
+                    </div>
+                </div>
+    
+                <!-- Email and Password section -->
+                <div class="email-div">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+    
+                <div>
+                    <button type="submit" class="submit">Login</button>
+                </div>
+                <p>Not registered yet? <a href="./signUp.html">Signup</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="section5">
+
+        <footer>
+            <div class="footer-section">
+
+                <div class="img-footer">
+                    <img src="../assets/logo.png" height="auto" width="200px" alt="">
+                </div>
+
+                <div class="para-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id beatae sunt voluptas itaque
+                        culpa
+                        voluptatum animi porro inventore expedita?</p>
+                </div>
+
+
+            </div>
+            <div class="footer-section1">
+                <h3 class="heading-footer" id="footer-nav">Navigation</h3>
+                <ul>
+                    <li> Home</li>
+                    <li> Jobs</li>
+                    <li> Candidates</li>
+                    <li> Partners</li>
+
+                </ul>
+            </div>
+            <div class="footer-section2">
+                <h3 class="heading-footer">Policies</h3>
+                <ul>
+                    <li onclick="window.location.href='./about.html'">About Us</li>
+                    <li onclick="window.location.href='./contact.html'"> Contact Us</li>
+                    <li onclick="window.location.href='./termsAndCondition.html'"> Terms & Conditions</li>
+                    <li onclick="window.location.href='./privacyPolicy.html'"> Privacy Policy</li>
+
+                </ul>
+            </div>
+            <div class="footer-section3">
+                <h3 class="heading-footer">Follow Us</h3>
+                <ul>
+                    <li> Blog</li>
+                    <li> Twitter</li>
+                    <li> Facebook</li>
+                    <li> Youtube</li>
+
+                </ul>
+            </div>
+            <div class="footer-section4">
+                <h3 class="heading-footer">Popular Jobs</h3>
+                <ul>
+                    <li> Web Developer</li>
+                    <li> Web Designer</li>
+                    <li> Ux Developer</li>
+                    <li> Account Manager</li>
+
+                </ul>
+            </div>
+        </footer>
+
+        <p class="footer-p">&copy;2023 <a href="./index.html">Spires</a>. All rights reserved. Powered by <a
+                href="">ActConnect</a></p>
+
+
+
+
+        <!-- ------------------------- -->
+
+
+
+
+
+
+
     </div>
 
 </body>

@@ -1,8 +1,9 @@
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 
 
@@ -12,10 +13,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 60px; */
-    width: 100%;
     max-width: 1200px;
-    /* Adjust this value as needed */
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -32,13 +31,6 @@ body {
 .profile-picture {
     width: 150px;
     height: 150px;
-
-    /* background-color: #ccc;  */
-    /* background-image: url("./close-up-portrait-cheerful-glamour-girl-with-cute-make-up-smiling-white-teeth-looking-happy-camera-standing-blue-background_1258-70300.avif"); */
-    /* object-fit: cover; */
-    /* background-position: center; */
-
-    /* Placeholder color for the profile picture */
     margin: 0 auto;
 }
 
@@ -78,25 +70,30 @@ body {
 .outer-container {
     margin-top: 60px;
     margin-bottom: 80px;
-    /* background-color: green; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    background-color: rgba(255, 166, 0, 0.16);
 }
 
 .inner-section1 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    border-right: 1px dotted black;
+}
+
+.skills{
+    margin-top: 4rem;
+    /* background-color: red; */
 }
 
 .skills span {
-    background-color: rgb(197, 243, 255);
+    /* background-color: rgb(197, 243, 255); */
+    background-color: aliceblue;
+    border: 1px dotted blue;
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 12px;
-    /* margin: 10px; */
     margin-right: 3px;
-    margin-bottom: 3px;
-
-
-
+    margin-bottom: 3px; 
+    font-weight: bold;
 }
 
 
@@ -175,14 +172,16 @@ body {
 /* Change background color of buttons on hover */
 .tab button:hover {
     /* background-color: #ddd; */
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-color: lightgoldenrodyellow;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
     /* background-color: #ccc; */
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.85);
     color: white;
+    border: 1px solid black;
 }
 
 /* Style the tab content */
@@ -191,8 +190,8 @@ body {
     /* padding: 6px 12px; */
     border-bottom: 1px solid #ccc;
     border-top: none;
-    /* background-color: whitesmoke; */
-    background-color: rgba(240, 248, 255, 0.843);
+    background-color: whitesmoke;
+    /* background-color: rgba(240, 248, 255, 0.843); */
     padding: 20px;
 }
 
@@ -206,12 +205,18 @@ body {
 .outercontainer-3 {
     width: 100%;
     /* display: flex; */
+    /* background-color: rebeccapurple; */
+    background-color: aliceblue;
 }
 
 /* Style for the inner sections */
 .innersection-3 {
     width: 100%;
     margin-bottom: 10px;
+    /* background-color: red; */
+    border: 0.1px dashed black;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 
@@ -231,14 +236,11 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    /* background-color: rgb(247, 253, 255);     */
-
 }
 
 /* Style for the inner sections */
 .innersection-4 {
     /* width: 30%; */
-    /* background-color: red; */
     height: 15vh;
     padding: 10px;
 }
@@ -252,12 +254,9 @@ body {
     margin: 0 auto;
 }
 
-
-
-
 .button {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .button button {
@@ -266,34 +265,18 @@ body {
     border-radius: 10px;
     outline: none;
     border: none;
-    background-color: rgb(0, 191, 255);
+    /* background-color: rgb(0, 191, 255); */
+    background-color: black;
     color: white;
     margin-right: 20px;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
+.button button:hover{
+    background-color: orange;
+}
 
-
-/*         inner section 1 ki css */
-
-
-
-
-
-
-/*         inner section 1 ki css */
-
-
-
-
-
-
-
-
-
-
-
-/*         inner section 2 ki css */
 
 
 .content-heading {
@@ -308,66 +291,19 @@ body {
 }
 
 
-
-
-/*         inner section 2 ki css */
-
-
-
-
-
-
-
-
-
-
-
-/*         inner section 3 ki css */
-
-
-
-
-
-
-/*         inner section 3 ki css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*         inner section 4 ki css */
-
-
 .innersection-4 img {
     height: 80px;
     width: 80px;
 }
 
 
-
-
-
 .up-para {
     font-weight: 500;
     color: rgb(3, 3, 154);
+    color: orangered;
     padding-bottom: 10px;
 
 }
-
-
-.down-para {
-    color: gray;
-}
-
 
 
 .div-projects a {
