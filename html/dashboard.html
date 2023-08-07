@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <div>
+                <h1>Hi, Welcome back!</h1>
+            </div>
+            <div>
+                <button onclick="window.location.href='./jobForm.html';">Post Internship</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-heading">
+                    <div>
+                        <h2>0</h2>
+                    </div>
+                    <div class="icon-1">
+                        <!-- <img src="./assets/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjFlbSIgaGVpZ2h0PSIxZW0iIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTUuNSA3YS41LjUgMCAwIDAgMCAxaDVhLjUuNSAwIDAgMC.svg"
+                            alt=""> -->
+                        <i class="far fa-file"></i>
+                    </div>
+                </div>
+                <h4>Posted</h4>
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <div>
+                        <h2>0</h2>
+                    </div>
+                    <div class="icon-1 icon-2">
+                        <!-- <img src="./assets/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjFlbSIgaGVpZ2h0PSIxZW0iIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTEzIDBINmEyIDIgMCAwIDAtMiAyIDIgMiAwIDAgMC0yID.svg"
+                            alt=""> -->
+                        <i class="far fa-copy"></i>
+                    </div>
+                </div>
+                <h4>Recieved</h4>
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <div>
+                        <h2>0</h2>
+                    </div>
+                    <div class="icon-1 icon-3">
+                        <!-- <img src="./assets/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjFlbSIgaGVpZ2h0PSIxZW0iIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTIuODY2IDE0Ljg1Yy0uMDc4LjQ0NC4zNi43OTEuNzQ2Lj.svg"
+                            alt=""> -->
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <h4>Shortlisted</h4>
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <div>
+                        <h2>0</h2>
+                    </div>
+                    <div class="icon-1 icon-4">
+                        <!-- <img src="./assets/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjFlbSIgaGVpZ2h0PSIxZW0iIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTggMTVBNyA3IDAgMSAxIDggMWE3IDcgMCAwIDEgMCAxNH.svg"
+                            alt=""> -->
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <h4>Hired</h4>
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <div>
+                        <h2>0</h2>
+                    </div>
+                    <div class="icon-1 icon-5">
+                        <!-- <img src="./assets/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjFlbSIgaGVpZ2h0PSIxZW0iIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAgMTIuNWEuNS41ID.svg"
+                            alt=""> -->
+                        [<i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <h4>Rejected</h4>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-heading">
+                <div>
+                    <h2>Internship List</h2>
+                </div>
+                <div>
+                    <input type="search" name="" id="" placeholder="Search Internship post">
+                </div>
+            </div>
+            <div class="search-div">
+                <div>
+                    <p>ID</p>
+                </div>
+                <div>
+                    <p>Internship Name</p>
+                </div>
+                <div>
+                    <p>Date</p>
+                    <div class="flex">
+                        <input type="date" name="" id="">
+                        <p>To</p>
+                        <input type="date" name="" id="">
+                    </div>
+                </div>
+                <div>
+                    <p>Status</p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">All</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Recieved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

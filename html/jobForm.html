@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/jobForm.css">
+
+</head>
+
+<body>
+
+    <div class="progress-bar">
+        <div class="step step1 active">
+            <i class="fas fa-user"></i>
+            <span>Personal Details</span>
+        </div>
+        <div class="progress-line"></div>
+        <div class="step step2">
+            <i class="fas fa-building"></i>
+            <span>Organization Details</span>
+        </div>
+        <div class="progress-line"></div>
+        <div class="step step3">
+            <i class="fas fa-file-invoice"></i>
+            <span>Post Internship</span>
+        </div>
+    </div>
+
+    <form id="multi-step-form">
+        <fieldset class="step-form active" data-step="1">
+            <h2>Personal Details :</h2>
+            <label for="">Name</label>
+            <input required type="text" name="name" placeholder="Your Name">
+            <label for="">Email</label>
+            <input required type="email" name="email" placeholder="Your Email">
+            <label for="">Mobile number</label>
+            <input required type="number" placeholder="Your Mobile Number">
+            <button type="button" class="next-button">Next</button>
+        </fieldset>
+
+        <fieldset class="step-form" data-step="2">
+            <form class="step-form">
+                <h2>Organization Details :</h2>
+                <label for="">Organization Name</label>
+                <input required type="text" name="company" placeholder="Company Name">
+                <div class="checkbox-container">
+                    <label class="checkbox-label">
+                        <input required type="checkbox" name="independent_practitioner">
+                        I am an independent practitioner (freelancer, architect, lawyer, etc.) hiring for myself and I
+                        am NOT hiring
+                        on behalf of a company.
+                    </label>
+                </div>
+                <div class="textarea-container">
+                    <label for="organization-description">Organisation description</label>
+                    <textarea id="organization-description" name="organization_description" minlength="100" oninput
+                        required="handleTextareaInput required()"></textarea>
+                </div>
+                <label for="">Organisation city</label>
+                <input required type="text" name="" id="" placeholder="e.g. Mumbai">
+                <!--  -->
+                <label for="">Industry</label>
+                <div class="dropdown-container">
+                    <div class="selected-options-container" id="selected-options-container"></div>
+                    <input type="text" id="dropdown-input" placeholder="Select options">
+                    <div class="dropdown-list" id="dropdown-list">
+                        <div class="option" data-value="Accounting/Finance">Accounting/Finance</div>
+                        <div class="option" data-value="Advertising/Marketing">Advertising/Marketing</div>
+                        <div class="option" data-value="Agriculture/Dairy">Agriculture/Dairy</div>
+                        <div class="option" data-value="Airline/Aviation">Airline/Aviation</div>
+                        <div class="option" data-value="Animation">Animation</div>
+                        <div class="option" data-value="Architecture/Interior Design">Architecture/Interior Design</div>
+                        <div class="option" data-value="Automobile">Automobile</div>
+                        <div class="option" data-value="Banking">Banking</div>
+                        <div class="option" data-value="Biotechnology">Biotechnology</div>
+                        <div class="option" data-value="BPO">BPO</div>
+                        <div class="option" data-value="Chemicals/Paints">Chemicals/Paints</div>
+                        <div class="option" data-value="Construction/Procurement">Construction/Procurement</div>
+                        <div class="option" data-value="Consulting">Consulting</div>
+                        <div class="option" data-value="Courier/Shipping/Transportation">Courier/Shipping/Transportation
+                        </div>
+                        <div class="option" data-value="Defence">Defence</div>
+                        <div class="option" data-value="E-commerce">E-commerce</div>
+                        <div class="option" data-value="Education/Teaching/Training">Education/Teaching/Training</div>
+                        <div class="option" data-value="Electrical">Electrical</div>
+                        <div class="option" data-value="Electronics/Semiconductors">Electronics/Semiconductors</div>
+                        <div class="option" data-value="Events services">Events services</div>
+                        <div class="option" data-value="Export/Import">Export/Import</div>
+                        <div class="option" data-value="Facility Management">Facility Management</div>
+                        <div class="option" data-value="Fertilizers/Pesticides">Fertilizers/Pesticides</div>
+                        <div class="option" data-value="FMCG">FMCG</div>
+                        <div class="option" data-value="Food/Beverages">Food/Beverages</div>
+                        <div class="option" data-value="Furniture">Furniture</div>
+                        <div class="option" data-value="Gaming">Gaming</div>
+                        <div class="option" data-value="Glass">Glass</div>
+                        <div class="option" data-value="Hardware">Hardware</div>
+                        <div class="option" data-value="Hospitals/Healthcare/Medical">Hospitals/Healthcare/Medical</div>
+                        <div class="option" data-value="Hotels/Restaurant">Hotels/Restaurant</div>
+                        <div class="option" data-value="Insurance">Insurance</div>
+                        <div class="option" data-value="IT/Technology">IT/Technology</div>
+                        <div class="option" data-value="KPO/Research">KPO/Research</div>
+                        <div class="option" data-value="Legal">Legal</div>
+                        <div class="option" data-value="Luxury goods/Jewellery/Accessories">Luxury
+                            goods/Jewellery/Accessories</div>
+                        <div class="option" data-value="Media/Entertainment">Media/Entertainment</div>
+                        <div class="option" data-value="Mining/Metals/Steel">Mining/Metals/Steel</div>
+                        <div class="option" data-value="Networking">Networking</div>
+                        <div class="option" data-value="Oil and Gas/Power/Energy">Oil and Gas/Power/Energy</div>
+                        <div class="option" data-value="Other">Other</div>
+                        <div class="option" data-value="Paper">Paper</div>
+                        <div class="option" data-value="Pharma">Pharma</div>
+                        <div class="option" data-value="Plastics/Rubber">Plastics/Rubber</div>
+                        <div class="option" data-value="Printing/Packaging">Printing/Packaging</div>
+                        <div class="option" data-value="Public Relations (PR)">Public Relations (PR)</div>
+                        <div class="option" data-value="Railways">Railways</div>
+                        <div class="option" data-value="Real Estate/Property">Real Estate/Property</div>
+                        <div class="option" data-value="Recruitment">Recruitment</div>
+                        <div class="option" data-value="Retail">Retail</div>
+                        <div class="option" data-value="Security/Law enforcement">Security/Law enforcement</div>
+                        <div class="option" data-value="Social services">Social services</div>
+                        <div class="option" data-value="Telecom">Telecom</div>
+                        <div class="option" data-value="Textiles/Garments/Fashion">Textiles/Garments/Fashion</div>
+                        <div class="option" data-value="Travel/Tourism">Travel/Tourism</div>
+                        <div class="option" data-value="Wellness/Fitness/Sports/Beauty">Wellness/Fitness/Sports/Beauty
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="employe-container">
+                    <label for="">No. of employees</label>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">0-50</option>
+                        <option value="">51-200</option>
+                        <option value="">201-500</option>
+                        <option value="">500-1000</option>
+                        <option value="">1000+</option>
+                    </select>
+                </div>
+                <!--  -->
+                <div class="image-container">
+                    <label for="fileInput" class="upload-text">Organisation Logo <span>(Recommended)</span></label>
+                    <div class="upload-container">
+                        <input type="file" id="fileInput" class="file-input" accept="image/*"
+                            onchange="handleFileChange(event)">
+                        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Upload
+                            Image</button>
+                    </div>
+                    <span>Max file size: 1Mb and max resolution: 500px x 500px. File type: jpeg, jpg, png, gif, bmp
+                    </span>
+                </div>
+            </form>
+
+            <div class="form-2-container">
+                <form action="" class="form-2">
+                    <h2>Organization verification</h2>
+                    <div class="verification-container">
+                        <p class="light">Using any one of the options below, get your organization verified and start
+                            posting
+                            internships/jobs</p>
+                        <div class="radio-container">
+                            <div class="radio">
+                                <input id="yes" type="radio" name="option" />
+                                <div>
+                                    <label for="">Organisation's website</label>
+                                    <p class="xl-light">Verify using your organization's active & functional website</p>
+                                </div>
+                            </div>
+                            <div class="radio">
+                                <input id="yes" type="radio" name="option" />
+                                <div>
+                                    <label for="">Organisation's website</label>
+                                    <p class="xl-light">Verify using your organization's active & functional website</p>
+                                </div>
+                            </div>
+                            <div class="radio">
+                                <input id="yes" type="radio" name="option" />
+                                <div>
+                                    <label for="">Organisation's website</label>
+                                    <p class="xl-light">Verify using your organization's active & functional website</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <button type="button" class="prev-button">Previous</button>
+            <button type="button" class="next-button">Next</button>
+
+        </fieldset>
+
+        <fieldset class="step-form" data-step="3">
+            <h2>Post Internship/Job</h2>
+
+            <label for="" class="internship-label">Oppurtunity type</label>
+            <div class="Oppurtunity">
+                <div class="Oppurtunity-div">
+                    <input type="radio" name="job" id="job">
+                    <label for="job">Job</label>
+                </div>
+                <div class="Oppurtunity-div">
+                    <input type="radio" name="job" id="internship">
+                    <label for="internship">Internship</label>
+                </div>
+            </div>
+
+            <label for="" class="internship-label">Internship details</label>
+            <div class="internship-detail">
+                <label for="">Internship profile</label>
+                <input type="text" name="" id="" placeholder="e.g. Android App Development">
+
+                <label for="">Skills required <span>(optional)</span></label>
+                <input type="text" name="" id="" placeholder="e.g. Java">
+
+                <label for="">Internship type</label>
+                <div class="remote">
+                    <div class="remote-div">
+                        <input type="radio" name="remote" id="remote1">
+                        <label for="remote1">In-office/Hybrid</label>
+                    </div>
+                    <div class="remote-div">
+                        <input type="radio" name="remote" id="remote2">
+                        <label for="remote2">Remote</label>
+                    </div>
+                </div>
+
+                <label for="">Part-time/Full-time</label>
+                <div class="remote">
+                    <div class="remote-div">
+                        <input type="radio" name="full" id="remote5">
+                        <label for="remote5">Part-time</label>
+                    </div>
+                    <div class="remote-div">
+                        <input type="radio" name="full" id="remote6">
+                        <label for="remote6">Full-time</label>
+                    </div>
+                </div>
+
+                <label for="">Number of openings</label>
+                <input required type="number" placeholder="e.g. 4">
+
+                <label for="">Internship start date</label>
+                <div class="remote date">
+                    <div class="remote-div date-div">
+                        <input type="radio" name="date" id="remote3">
+                        <label for="remote3">Immediately (within next 30 days)</label>
+                    </div>
+                    <div class="remote-div ">
+                        <input type="radio" name="date" id="remote4">
+                        <label for="remote4">Later</label>
+                    </div>
+                </div>
+
+                <label for="">Internship duration</label>
+                <p class="duration-para">Shorter the duration, more the applications</p>
+                <div class="duration-div">
+                    <select name="" id="" aria-placeholder="Choose duration">
+                        <option value="">Choose duration</option>
+                        <option value="">1 </option>
+                        <option value="">2 </option>
+                        <option value="">3 </option>
+                        <option value="">4 </option>
+                        <option value="">5 </option>
+                        <option value="">6 </option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">months</option>
+                        <option value="">weeks</option>
+                    </select>
+                </div>
+
+                <label for="">Intern’s responsibilities</label>
+                <textarea name="" id="" cols="30" rows="10"
+                    placeholder="Selected intern's day-to-day responsibilities include:"></textarea>
+
+                <div class="application-div">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Allow applications from women also who are willing to start/restart their
+                        career.</label>
+                </div>
+
+            </div>
+
+
+            <label for="">Stipend & perks</label>
+            <div class="internship-detail">
+                <label for="">Stipend</label>
+                <div class="stipend-div">
+                    <div class="stipend">
+                        <input type="radio" name="stipend" id="fixed">
+                        <label for="stipend">Fixed</label>
+                    </div>
+                    <div class="stipend stipend-2">
+                        <input type="radio" name="stipend" id="Negotiable">
+                        <label for="Negotiable">Negotiable</label>
+                    </div>
+                    <div class="stipend stipend-3">
+                        <input type="radio" name="stipend" id="Performance">
+                        <label for="Performance">Performance based</label>
+                    </div>
+                    <div class="stipend">
+                        <input type="radio" name="stipend" id="Unpaid">
+                        <label for="Unpaid">Unpaid</label>
+                    </div>
+                </div>
+
+                <div class="stipend-amount-div">
+                    <div class="stipend-amount">
+                        <select name="" id="">
+                            <option value="">Rs</option>
+                        </select>
+                        <input type="number" name="" id="" placeholder="e.g. 100000">
+                        <select>
+                            <option value="">/week</option>
+                            <option value="">/month</option>
+                            <option value="">lump-sum</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="perks">
+                    <label for="">Perks <span>(Optional)</span></label>
+                    <div class="perks-div">
+                        <div>
+                            <input type="checkbox" name="certificate" id="">
+                            <label for="certificate">Certificate</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="recommendation" id="">
+                            <label for="recommendation">Letter of recommendation</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="work" id="">
+                            <label for="work">Flexible work hours</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="week" id="">
+                            <label for="week">5 days a week</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="dress" id="">
+                            <label for="dress">Informal dress code</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="snacks" id="">
+                            <label for="snacks">Free snacks & beverages</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <label for="">Cover letter, availability & assessment question</label>
+            <div class="internship-detail coverletter">
+                <span>
+                    Cover letter & availability question will be asked to every applicant by default. If you wish, you
+                    may ask two
+                    more customized questions as an assessment.
+                </span>
+                <h4>Cover letter</h4>
+                <p>Why should you be hired for this role?</p>
+                <h4>Availability</h4>
+                <p>Are you available for 1 month, starting immediately, for a full-time work from home internship? If
+                    not, what
+                    is the time period you are available for and the earliest date you can start this internship on?</p>
+            </div>
+
+            <div class="internship-detail Alternate">
+                <h4>Alternate mobile number for this post</h4>
+                <p>Our team will call you on this number in case of any query regarding this post only. Primary account
+                    number will not be updated.</p>
+                <div class="Alternate-div">
+                    <div>
+                        <input type="number" name="" id="" placeholder="+91">
+                    </div>
+                    <div>
+                        <input type="number" name="" id="" placeholder="000000000">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type="button" class="prev-button">Previous</button>
+            <button type="submit" class="btn-submit">Post internship</button>
+        </fieldset>
+    </form>
+
+    <script>
+        const steps = document.querySelectorAll(".step");
+        const stepForms = document.querySelectorAll(".step-form");
+        const prevButton = document.querySelectorAll(".prev-button");
+        const nextButton = document.querySelectorAll(".next-button");
+        const form = document.getElementById("multi-step-form");
+
+        let currentStep = 0;
+
+        function updateStepVisibility() {
+            stepForms.forEach((stepForm, index) => {
+                if (index === currentStep) {
+                    stepForm.classList.add("active");
+                } else {
+                    stepForm.classList.remove("active");
+                }
+            });
+        }
+
+        function updateProgressBar() {
+            steps.forEach((step, index) => {
+                if (index < currentStep) {
+                    step.classList.add("active");
+                } else {
+                    step.classList.remove("active");
+                }
+            });
+        }
+
+        prevButton.forEach((button) => {
+            button.addEventListener("click", () => {
+                currentStep--;
+                updateStepVisibility();
+                updateProgressBar();
+            });
+        });
+
+        nextButton.forEach((button) => {
+            button.addEventListener("click", () => {
+                currentStep++;
+                updateStepVisibility();
+                updateProgressBar();
+            });
+        });
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Form submitted successfully!");
+        });
+
+        const input = document.getElementById("dropdown-input");
+        const list = document.getElementById("dropdown-list");
+        const selectedOptionsContainer = document.getElementById(
+            "selected-options-container"
+        );
+        const selectedOptions = new Set(); // Set to store selected options
+
+        // Toggle dropdown list on input click
+        input.addEventListener("click", () => {
+            list.style.display = list.style.display === "block" ? "none" : "block";
+        });
+
+        // Handle option selection and display selected options above the input
+        list.addEventListener("click", (event) => {
+            const selectedOption = event.target;
+            if (selectedOption.classList.contains("option")) {
+                const optionValue = selectedOption.dataset.value;
+
+                // Check if the option is already selected
+                if (!selectedOptions.has(optionValue)) {
+                    // Add the selected option to the input value
+                    input.value += ` ${optionValue}`;
+
+                    // Display the selected option above the input
+                    const selectedOptionDiv = document.createElement("div");
+                    selectedOptionDiv.classList.add("selected-option");
+
+                    const selectedOptionText = document.createElement("span");
+                    selectedOptionText.classList.add("selected-option-text");
+                    selectedOptionText.textContent = optionValue;
+
+                    const removeIcon = document.createElement("span");
+                    removeIcon.classList.add("remove");
+                    removeIcon.innerHTML = "&times;";
+                    removeIcon.addEventListener("click", () => {
+                        // Remove the selected option when the remove icon is clicked
+                        selectedOptionDiv.remove();
+                        input.value = input.value.replace(optionValue, "").trim();
+                        selectedOptions.delete(optionValue); // Remove from the selectedOptions set
+                    });
+
+                    selectedOptionDiv.appendChild(selectedOptionText);
+                    selectedOptionDiv.appendChild(removeIcon);
+                    selectedOptionsContainer.appendChild(selectedOptionDiv);
+
+                    // Add the option to the selectedOptions set
+                    selectedOptions.add(optionValue);
+                }
+
+                // Clear the input value for next selection
+                input.value = "";
+            }
+        });
+
+        // Close the dropdown when clicked outside
+        document.addEventListener("click", (event) => {
+            if (!list.contains(event.target) && event.target !== input) {
+                list.style.display = "none";
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
