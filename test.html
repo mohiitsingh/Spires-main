@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style for the button */
+    .change-profile-btn {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <!-- "Change Profile" Button -->
+  <button class="change-profile-btn" onclick="openFileInput()">Change Profile</button>
+
+  <!-- Input for Profile Image -->
+  <input id="fileInput" type="file" style="display: none;" accept="image/*" onchange="handleFileChange(event)">
+  
+  <!-- Display Profile Image -->
+  <img id="profileImage" src="#" alt="Profile Image" style="max-width: 200px; display: none;">
+</div>
+
+<script>
+function openFileInput() {
+  document.getElementById("fileInput").click();
+}
+
+function handleFileChange(event) {
+  var file = event.target.files[0];
+  var imageElement = document.getElementById("profileImage");
+
+  if (file && file.type.startsWith("image/")) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      imageElement.src = e.target.result;
+      imageElement.style.display = "block";
+    };
+    reader.readAsDataURL(file);
+  }
+}
+</script>
+
+</body>
+</html>
