@@ -71,7 +71,7 @@
     margin-top: 60px;
     margin-bottom: 80px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
-    background-color: rgba(255, 166, 0, 0.16);
+    /* background-color: rgba(255, 166, 0, 0.16); */
 }
 
 .inner-section1 {
@@ -218,6 +218,10 @@
     border: 1px solid black;
     padding: 20px;
     /* border-radius: 8px; */
+}
+
+.innersection-3 h2{
+    font-size: 1.3rem;
 }
 
 
